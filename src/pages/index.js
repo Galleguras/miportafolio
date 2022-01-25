@@ -1,31 +1,55 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import Layout from '../Layout/Layout.jsx'
+import styled from 'styled-components'
+import coverVideo from '../media/coverVideo.mp4'
+const Main = styled.div`
+    border: 3px solid black;
+    grid-area: 2 / 1 / 3 / 3;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+`
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+const CoverContainer = styled.div`
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        font-size: 100px;
+    }
+    p {
+        margin-top: 8px;
+        color: white;
+        font-size: 32px;
+    }
+`
+
+const Video = styled.video`
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+`
 
 const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
-  </Layout>
+    <Layout>
+        <Main>
+            {/*  <div style={{ height: '1300px' }}>
+                <h1>index</h1>
+            </div> */}
+            <CoverContainer>
+                <Video src={coverVideo} autoPlay loop muted></Video>
+                <h1>Pablo Gallego Carmona</h1>
+                <p>Developer | Designer | Content Creator | Entrepeneur</p>
+            </CoverContainer>
+        </Main>
+    </Layout>
 )
 
 export default IndexPage
