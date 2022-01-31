@@ -3,6 +3,21 @@ import styled from 'styled-components'
 import logo from '../../media/githubIcon.ico'
 import linkedin from '../../media/linkedinx.png'
 import email from '../../media/email.png'
+
+const sizes = { mobile: '375px', tablet: '768px', pc: '1024px' }
+
+const device = {
+    mobile: (styles) => {
+        return `  @media (min-width: ${sizes.mobile}) {${styles}}`
+    },
+    tablet: (styles) => {
+        return `  @media (min-width: ${sizes.tablet}) {${styles}}`
+    },
+    pc: (styles) => {
+        return `  @media (min-width: ${sizes.pc}) {${styles}}`
+    }
+}
+
 const NavBar = styled.nav`
     margin-top: 0px;
     display: flex;
@@ -39,22 +54,8 @@ const NavBarLogo = styled.div`
             return `opacity:1 ; visibility: visible ;
 `
     }};
-    @media (min-width: 375px) {
-        margin: 0px 0px 0px 2px;
-    }
-    @media (min-width: 700px) {
-    }
-    @media (min-width: 1300px) {
-    }
+    ${device.mobile`  margin: 0px 0px 0px 2px;`}
 `
-
-const sizes = { mobile: '375px', tablet: '768px', pc: '1024px' }
-
-const devices = {
-    mobile: (styles) => {
-        return `  @media (min-width: ${sizes.mobile}) {${styles}}`
-    }
-}
 
 const IconBar = styled.div`
     margin-top: 0px;
@@ -73,12 +74,6 @@ const IconBar = styled.div`
         }
         &:active {
             transform: scale(1.2, 1.2);
-        }
-        @media (min-width: 375px) {
-        }
-        @media (min-width: 700px) {
-        }
-        @media (min-width: 1300px) {
         }
     }
 `
