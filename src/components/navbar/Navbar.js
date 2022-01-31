@@ -3,22 +3,9 @@ import styled from 'styled-components'
 import logo from '../../media/githubIcon.ico'
 import linkedin from '../../media/linkedinx.png'
 import email from '../../media/email.png'
+import { sizes, device } from '../../styles/responsive'
 
-const sizes = { mobile: '375px', tablet: '768px', pc: '1024px' }
-
-const device = {
-    mobile: (styles) => {
-        return `  @media (min-width: ${sizes.mobile}) {${styles}}`
-    },
-    tablet: (styles) => {
-        return `  @media (min-width: ${sizes.tablet}) {${styles}}`
-    },
-    pc: (styles) => {
-        return `  @media (min-width: ${sizes.pc}) {${styles}}`
-    }
-}
-
-const NavBar = styled.nav`
+const NavBar = styled.nav `
     margin-top: 0px;
     display: flex;
     flex-direction: row;
@@ -54,7 +41,8 @@ const NavBarLogo = styled.div`
             return `opacity:1 ; visibility: visible ;
 `
     }};
-    ${device.mobile`  margin: 0px 0px 0px 2px;`}
+    ${device.mobile`  margin: 0px 0px 0px 2px;font-size: 0.7rem;`}
+    ${device.tablet`  margin: 0px 0px 0px 2px;font-size: 0.8rem;`}
 `
 
 const IconBar = styled.div`
@@ -75,6 +63,7 @@ const IconBar = styled.div`
         &:active {
             transform: scale(1.2, 1.2);
         }
+        ${device.mobile`height: 40px;`}
     }
 `
 const Navbar = ({ isScrolling }) => {
@@ -85,7 +74,7 @@ const Navbar = ({ isScrolling }) => {
     return (
         <NavBar scrolling={isScrolling}>
             <NavBarLogo scrolling={isScrolling} onClick={toTheTop}>
-                <div> Pablo Gallego Carmona</div>
+                Pablo Gallego Carmona
             </NavBarLogo>
             <IconBar>
                 <a href="" target="_blank" rel="noopener norefferer">
