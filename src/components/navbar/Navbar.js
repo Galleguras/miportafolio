@@ -5,7 +5,7 @@ import linkedin from '../../media/linkedinx.png'
 import email from '../../media/email.png'
 import { sizes, device } from '../../styles/responsive'
 
-const NavBar = styled.nav `
+const NavBar = styled.nav`
     margin-top: 0px;
     display: flex;
     flex-direction: row;
@@ -41,8 +41,8 @@ const NavBarLogo = styled.div`
             return `opacity:1 ; visibility: visible ;
 `
     }};
-    ${device.mobile`  margin: 0px 0px 0px 2px;font-size: 0.7rem;`}
-    ${device.tablet`  margin: 0px 0px 0px 2px;font-size: 0.8rem;`}
+    ${device.mobile`  font-size: 0.9rem;`}
+    ${device.tablet`  font-size: 0.9rem;`}
 `
 
 const IconBar = styled.div`
