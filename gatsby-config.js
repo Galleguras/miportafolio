@@ -8,6 +8,14 @@ module.exports = {
         siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`
     },
     plugins: [
+        {
+            resolve: `gatsby-source-datocms`,
+            options: {
+                apiToken: `3698c06313413ffdab01d83fb600ab`,
+                preview: false,
+                disableLiveReload: false
+            }
+        },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         {
@@ -72,7 +80,7 @@ module.exports = {
                 profiles: {
                     sepia: {
                         extension: `mp4`,
-                        converter: function({
+                        converter: function ({
                             ffmpegSession,
                             videoStreamMetadata
                         }) {

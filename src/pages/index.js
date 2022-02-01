@@ -8,6 +8,7 @@ import Info from '../components/info/Info'
 import Footer from '../components/footer/Footer'
 import Helmet from 'react-helmet'
 import favicon from '../media/imgPestaña.ico'
+import Courses from '../components/courses/Courses'
 const IndexPage = () => {
     const [scrollHeight, setScrollHeight] = useState(0)
 
@@ -33,6 +34,7 @@ const IndexPage = () => {
             </Helmet>
             <Navbar isScrolling={scrollHeight} />
             <Cover />
+            <Courses />
             <About />
             <Slider />
             <Info />
