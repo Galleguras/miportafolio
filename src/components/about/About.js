@@ -20,17 +20,14 @@ const AboutContainer = styled.div`
     ${device.tablet`   
     
       flex-direction: column;
-         padding: 20px 5px 20px 0;   `} /*   @media (max-width: 350px) {
-        background-color: red;
-        flex-direction: column;
-    } ; */
+         padding: 20px 5px 20px 0;   `}
 `
 const AboutDesc = styled.div`
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 100px;
+    padding: 0 0 0 100px;
 
     h3 {
         margin-bottom: 30px;
@@ -50,12 +47,12 @@ const AboutDesc = styled.div`
 `
 
 const AboutImg = styled.div`
-    background-image: url(${miFoto});
-    background-size: contain;
+    background-image: radial-gradient(transparent, white 65%), url(${miFoto});
+    background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: center;
     flex: 1;
-    box-shadow: 0 0 4px 20px white inset;
+    ${device.mobile`background-size: 200px 200px;`}
 `
 
 const About = () => {
