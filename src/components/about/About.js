@@ -12,7 +12,7 @@ const AboutContainer = styled.div`
     padding: 100px 10px 100px 0;
     justify-content: space-between;
     outline: 4px solid #000;
-    outline-offset: -10px;
+    outline-offset: -4px;
     ${device.mobile`   
     
       flex-direction: column;
