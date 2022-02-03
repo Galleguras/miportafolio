@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { sizes, device } from '../../styles/responsive'
 
-import miFoto from '../../media/miFoto.jpg'
+import miFoto from '../../media/miFoto.png'
 
 const AboutContainer = styled.div`
     display: flex;
@@ -47,11 +47,11 @@ const AboutDesc = styled.div`
 `
 
 const AboutImg = styled.div`
-    background-image: radial-gradient(transparent, white 65%), url(${miFoto});
-    background-size: 300px 300px;
+    background-image: url(${miFoto});
+    background-size: 500px 500px;
     background-repeat: no-repeat;
     background-position: center;
-    flex: 1;
+    flex: 2;
     ${device.mobile`background-size: 200px 200px;`}
 `
 
