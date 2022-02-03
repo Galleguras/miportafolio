@@ -1,10 +1,12 @@
 import React from 'react'
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
-import Slides from './Slides'
+
+import Panel from './Panel'
 import './Slider.css'
 import styled from 'styled-components'
 import { sizes, device } from '../../styles/responsive'
+import useTrabajo from '../hooks/useTrabajo'
 const CarouselContainer = styled.div`
     display: flex;
     vertical-align: center;
@@ -27,29 +29,25 @@ const CarouselTitle = styled.div`
 `
 
 const Slider = () => {
+    const slidesInfo = useTrabajo()
+
     return (
         <CarouselContainer>
             <CarouselTitle>
                 <h2>My Projects</h2>
             </CarouselTitle>
-
             <Carousel
                 arrows
-                slidesPerPage={3}
                 infinite
                 animationSpeed={200}
                 centered
                 offset={50}
                 itemWidth={400}
-                slides={Slides}
-                breakpoints={{
-                    960: {
-                        slidesPerPage: 1,
-                        arrows: false,
-                        itemWidth: 250
-                    }
-                }}
-            />
+            >
+                {slidesInfo.map((info) => {
+                    return <Panel info={info} />
+                })}
+            </Carousel>
         </CarouselContainer>
     )
 }

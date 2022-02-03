@@ -14,13 +14,13 @@ const AboutContainer = styled.div`
     outline: 4px solid #000;
     outline-offset: -4px;
     ${device.mobile`   
-    
+      display: flex;    
       flex-direction: column;
          padding: 20px 5px 20px 0;   `}
     ${device.tablet`   
-    
+      display: flex;
       flex-direction: column;
-         padding: 20px 5px 20px 0;   `}
+         padding:  0; margin:0  `}
 `
 const AboutDesc = styled.div`
     flex: 2;

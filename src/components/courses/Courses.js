@@ -12,20 +12,18 @@ const CoursesContainer = styled.div`
 
 const CoursesTitle = styled.div`
     display: flex;
-
     flex: 1;
     text-align: center;
     font-size: 30px;
     justify-content: center;
     align-items: center;
-    ${device.tablet`padding:0 10px`}
+    ${device.tablet`padding:0 10px;font-size: 20px;`}
+    ${device.mobile`padding:0 10px;font-size: 20px;`}
 `
 
 const CoursesData = styled.div`
-
     flex: 2;
-    display:flex
-    align-self: stretch;
+    display: flex;
 `
 
 const Courses = () => {
