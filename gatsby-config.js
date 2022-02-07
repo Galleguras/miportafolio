@@ -9,6 +9,39 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/locales`,
+                name: `locale`
+            }
+        },
+        {
+            resolve: `gatsby-plugin-react-i18next`,
+            options: {
+                localeJsonSourceName: `locale`,
+                languages: [`es`, `en`],
+                defaultLanguage: `es`,
+                siteUrl: `http://localhost:8000/`,
+                i18nextOptions: {
+                    interpolation: {
+                        escapeValue: false
+                    },
+                    keySeparator: false,
+                    nsSeparator: false
+                },
+                pages: [
+                    {
+                        matchPath: '/:lang?/blog/:uid',
+                        getLanguageFromPath: true
+                    },
+                    {
+                        matchPath: '/preview',
+                        languages: ['es']
+                    }
+                ]
+            }
+        },
+        {
             resolve: `gatsby-source-datocms`,
             options: {
                 apiToken: `3698c06313413ffdab01d83fb600ab`,

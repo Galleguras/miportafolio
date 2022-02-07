@@ -1,0 +1,7 @@
+{
+    "title": "en español titulo",
+    "description": {
+        "part1": "en español To get started, edit <1>src/App.js</1> and save to reload.",
+        "part2": "en españolSwitch language between english and german using buttons above."
+    }
+}
