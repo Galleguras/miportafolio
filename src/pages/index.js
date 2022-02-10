@@ -1,20 +1,28 @@
-import React, { useState, useEffect, createContext } from 'react'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { graphql } from 'gatsby'
-import Cover from '../components/cover/Cover'
-import Navbar from '../components/navbar/Navbar'
-import About from '../components/about/About'
-import Slider from '../components/slider/Slider'
-import Info from '../components/info/Info'
-import Footer from '../components/footer/Footer'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
+import React, { useEffect, useState } from 'react'
 import Helmet from 'react-helmet'
-import favicon from '../media/imgPestaña.ico'
+import About from '../components/about/About'
 import Courses from '../components/courses/Courses'
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next'
-
+import Cover from '../components/cover/Cover'
+import Footer from '../components/footer/Footer'
+import Info from '../components/info/Info'
+import Navbar from '../components/navbar/Navbar'
+import Slider from '../components/slider/Slider'
+import favicon from '../media/imgPestaña.ico'
+import LocationProvider from '../context/LocationProvider'
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#ffffff'
+        }
+    }
+})
 const IndexPage = () => {
     const { t } = useTranslation()
     const [scrollHeight, setScrollHeight] = useState(0)
-
+    const [idioma, setIdioma] = useState()
     const handleScroll = () => {
         const position = window.pageYOffset
         setScrollHeight(position)
@@ -25,34 +33,29 @@ const IndexPage = () => {
     }, [scrollHeight])
 
     return (
-        <>
-            <Helmet>
-                <title>Portafolio Pablo</title>
-                <link
-                    rel="icon"
-                    type="image/png"
-                    href={favicon}
-                    sizes="16x16"
-                />
-            </Helmet>
-            <p
-                style={{
-                    position: 'relative',
-                    height: '100px',
-                    color: 'red',
-                    zIndex: 11
-                }}
-            >
-                {t('title')}
-            </p>
-            <Navbar isScrolling={scrollHeight} />
-            <Cover />
-            <Courses />
-            <About />
-            <Slider />
-            <Info />
-            <Footer />
-        </>
+        <LocationProvider>
+            <ThemeProvider theme={theme}>
+                <Helmet>
+                    <title>Portafolio Pablo</title>
+                    <link
+                        rel="icon"
+                        type="image/png"
+                        href={favicon}
+                        sizes="16x16"
+                    />
+                </Helmet>
+
+                <Navbar isScrolling={scrollHeight} />
+                <Cover />
+
+                <Courses />
+
+                <About />
+                <Slider />
+                <Info />
+                <Footer />
+            </ThemeProvider>
+        </LocationProvider>
     )
 }
 

@@ -18,13 +18,15 @@ module.exports = {
         {
             resolve: `gatsby-plugin-react-i18next`,
             options: {
-                localeJsonSourceName: `locale`,
-                languages: [`es`, `en`],
-                defaultLanguage: `es`,
-                siteUrl: `http://localhost:8000/`,
+                localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+                languages: [`en`, `es`],
+                defaultLanguage: `en`,
+                // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+                siteUrl: `https://example.com/`,
+                // you can pass any i18next options
                 i18nextOptions: {
                     interpolation: {
-                        escapeValue: false
+                        escapeValue: false // not needed for react as it escapes by default
                     },
                     keySeparator: false,
                     nsSeparator: false
@@ -32,11 +34,12 @@ module.exports = {
                 pages: [
                     {
                         matchPath: '/:lang?/blog/:uid',
-                        getLanguageFromPath: true
+                        getLanguageFromPath: true,
+                        excludeLanguages: ['es']
                     },
                     {
                         matchPath: '/preview',
-                        languages: ['es']
+                        languages: ['en']
                     }
                 ]
             }

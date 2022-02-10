@@ -1,8 +1,9 @@
-import React from 'react'
-import coverVideo from '../../media/coverVideo.mp4'
-import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
-import { sizes, device } from '../../styles/responsive'
+import React from 'react'
+import styled from 'styled-components'
+import { device } from '../../styles/responsive'
+
+
 const CoverContainer = styled.div`
     height: 100vh;
     width: 100%;
@@ -61,6 +62,7 @@ const Cover = () => {
     console.log(image.edges[0].node.publicURL)
     return (
         <CoverContainer>
+      
             <video
                 className="video"
                 src={image.edges[0].node.publicURL}

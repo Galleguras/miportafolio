@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useLocationContext } from '../../context/LocationProvider'
+import { device } from '../../styles/responsive'
 import CoursesList from './CoursesList'
-import { sizes, device } from '../../styles/responsive'
+
 const CoursesContainer = styled.div`
     display: flex;
     color: white;
@@ -27,10 +29,13 @@ const CoursesData = styled.div`
 `
 
 const Courses = () => {
+    const { language } = useLocationContext()
+    /*  const { language } = useI18next() */
     const text = 'One \n Two \n Three'
     return (
         <CoursesContainer>
             <CoursesTitle>
+                <h1>{language}</h1>
                 <h2>
                     Certificaciones
                     <br />y

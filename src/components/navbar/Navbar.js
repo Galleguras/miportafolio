@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+import email from '../../media/email.png'
 import logo from '../../media/githubIcon.ico'
 import linkedin from '../../media/linkedinx.png'
-import email from '../../media/email.png'
-import { sizes, device } from '../../styles/responsive'
+import { device } from '../../styles/responsive'
+import Header from '../Header/Header'
 
 const NavBar = styled.nav`
     margin-top: 0px;
@@ -76,6 +77,7 @@ const Navbar = ({ isScrolling }) => {
             <NavBarLogo scrolling={isScrolling} onClick={toTheTop}>
                 Pablo Gallego Carmona
             </NavBarLogo>
+            <Header />
             <IconBar>
                 <a href="" target="_blank" rel="noopener norefferer">
                     <img src={email} alt="email logo" />
