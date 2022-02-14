@@ -1,10 +1,11 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
+
 const useTrabajo = () => {
     const { slidesInfo } = useStaticQuery(graphql`
         query {
             slidesInfo: allDatoCmsTrabajo {
                 nodes {
+                    locale
                     empresa
                     fechaInicio
                     fechaFin
@@ -26,6 +27,7 @@ const useTrabajo = () => {
     `)
 
     return slidesInfo.nodes.map((product) => ({
+        locale: product.locale,
         empresa: product.empresa,
         funcion: product.funcion,
         eht: product.eht,

@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import styled from 'styled-components'
 import { device } from '../../styles/responsive'
-
 
 const CoverContainer = styled.div`
     height: 100vh;
@@ -35,6 +35,7 @@ const CoverContainer = styled.div`
 /* import {graphql,} from "gatsby" */
 
 const Cover = () => {
+    const { t } = useTranslation()
     const { image } = useStaticQuery(graphql`
         query {
             image: allFile(
@@ -62,7 +63,6 @@ const Cover = () => {
     console.log(image.edges[0].node.publicURL)
     return (
         <CoverContainer>
-      
             <video
                 className="video"
                 src={image.edges[0].node.publicURL}
@@ -70,8 +70,7 @@ const Cover = () => {
                 loop
                 muted
             />
-            <h1> Pablo Gallego Carmona </h1>{' '}
-            <p> Developer | Designer | Content Creator | Entrepeneur </p>{' '}
+            <h1> Pablo Gallego Carmona </h1> <p> {t('title')} </p>
         </CoverContainer>
     )
 }

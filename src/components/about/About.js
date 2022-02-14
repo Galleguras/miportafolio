@@ -1,8 +1,8 @@
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import styled from 'styled-components'
-import { sizes, device } from '../../styles/responsive'
-
 import miFoto from '../../media/miFoto.png'
+import { device } from '../../styles/responsive'
 
 const AboutContainer = styled.div`
     display: flex;
@@ -56,16 +56,16 @@ const AboutImg = styled.div`
 `
 
 const About = () => {
+    const { t } = useTranslation()
     return (
         <AboutContainer>
             <AboutDesc>
-                <h3> Let me tell you something about me </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.Omnis provident inventore quod voluptates sequi.Quis,
-                    necessitatibus omnis iusto perferendis dolores voluptate et
-                    dolorum inventore autem nemo, quos eveniet magni nesciunt.{' '}
-                </p>
+                <h3> {t('Déjame contarte algo sobre mí')}... </h3>
+                <p>{t('p1')}</p>
+                <p>{t('p2')}</p>
+                <p>{t('p3')}</p>
+                <p>{t('p4')}</p>
+                <p>{t('p5')}</p>
             </AboutDesc>
 
             <AboutImg />

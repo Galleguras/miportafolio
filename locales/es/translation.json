@@ -1,7 +1,13 @@
 {
-    "title": "en español titulo",
-    "description": {
-        "part1": "en español To get started, edit <1>src/App.js</1> and save to reload.",
-        "part2": "en españolSwitch language between english and german using buttons above."
-    }
+    "title": "Desarrollador | Diseñador | Creador de contenido web | Emprendedor",
+    "Certificaciones y Cursos": "Certificaciones\ny\nCursos",
+    "Déjame contarte algo sobre mí": "Déjame contarte algo sobre mí",
+
+    "p1": "Actualmente formo parte de uno de los principales proveedores mundiales de tecnologías de la información y las comunicaciones. ",
+    "p2": "La mayor parte de mi trayectoria laboral está vinculada al desarrollo Software bancario, administración pública, sector seguros, además de otros proyectos personales. Dentro de este contexto he trabajado con diferentes lenguajes de programación y herramientas de desarrollo siempre a la vanguardia de las tecnologías, con el fin de conseguir aplicaciones atractivas y escalables.",
+    "p3": "Al principio de mi carrera mi perfil estaba más ligado a la parte del Backend y los servicios web, hasta que me ofrecieron la oportunidad de empezar a trabajar con Java Script, fue entonces cuando descubrí el gran potencial que tenia ya que con él podía hacer prácticamente cualquier desarrollo y entonces llego Webpack, ES6 y React una librería impresionante que me abrió las puertas a un mundo lleno de posibilidades bajo el concepto del JAMStack:",
+    "p4": "“Una arquitectura moderna, para el desarrollo web basada en el uso de JS en el cliente, APIs reutilizables y Markup precalculado”",
+    "p5": "Desde entonces esta es la parte que más interés despierta en mí actualmente y en la que más cómodo me encuentro. Posteriormente descubrí Next.js, Gatsby, Styled-Components, entre otros frameworks y librerías en las que actualmente baso mi desarrollo para ofrecer un producto moderno, responsivo, veloz y con un buen performance pensado para cubrir las necesidades de cualquier cliente.",
+
+    "Mis Proyectos": "Mis Proyectos"
 }

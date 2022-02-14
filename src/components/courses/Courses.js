@@ -1,9 +1,9 @@
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import styled from 'styled-components'
 import { useLocationContext } from '../../context/LocationProvider'
 import { device } from '../../styles/responsive'
 import CoursesList from './CoursesList'
-
 const CoursesContainer = styled.div`
     display: flex;
     color: white;
@@ -21,6 +21,9 @@ const CoursesTitle = styled.div`
     align-items: center;
     ${device.tablet`padding:0 10px;font-size: 20px;`}
     ${device.mobile`padding:0 10px;font-size: 20px;`}
+    h2 {
+        word-spacing: 9999px;
+    }
 `
 
 const CoursesData = styled.div`
@@ -29,19 +32,14 @@ const CoursesData = styled.div`
 `
 
 const Courses = () => {
+    const { t } = useTranslation()
     const { language } = useLocationContext()
     /*  const { language } = useI18next() */
-    const text = 'One \n Two \n Three'
+
     return (
         <CoursesContainer>
             <CoursesTitle>
-                <h1>{language}</h1>
-                <h2>
-                    Certificaciones
-                    <br />y
-                    <br />
-                    Cursos
-                </h2>
+                <h2>{t('Certificaciones y Cursos')}</h2>
             </CoursesTitle>
             <CoursesData>
                 <CoursesList />
