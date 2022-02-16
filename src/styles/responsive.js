@@ -1,4 +1,4 @@
-export const sizes = { mobile: '375px', tablet: '768px', pc: '1024px' }
+export const sizes = { mobile: '400px', tablet: '768px', pc: '1024px' }
 
 export const device = {
     mobile: (styles) => {

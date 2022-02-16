@@ -1,15 +1,14 @@
-import React from 'react'
-import { useLocationContext } from '../../context/LocationProvider'
+import Avatar from '@mui/material/Avatar'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
-import Divider from '@mui/material/Divider'
-import ListItemText from '@mui/material/ListItemText'
 import ListItemAvatar from '@mui/material/ListItemAvatar'
-import Avatar from '@mui/material/Avatar'
-import Typography from '@mui/material/Typography'
-import styled from 'styled-components'
-import { graphql, useStaticQuery } from 'gatsby'
+import ListItemText from '@mui/material/ListItemText'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
+import Typography from '@mui/material/Typography'
+import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react'
+import styled from 'styled-components'
+import { useLocationContext } from '../../context/LocationProvider'
 
 const BorderedAvatar = styled(Avatar)`
     border: 2px solid black;
@@ -53,7 +52,6 @@ const CoursesList = () => {
 
     return (
         <>
-            {' '}
             <List
                 sx={{
                     width: '100%',
@@ -65,7 +63,7 @@ const CoursesList = () => {
                 {formacion.nodes.map((curso) => {
                     if (curso.locale === language) {
                         return (
-                            <ListItem alignItems="flex-start">
+                            <ListItem alignItems="center">
                                 <ListItemAvatar>
                                     <HtmlTooltip
                                         title={
@@ -85,7 +83,14 @@ const CoursesList = () => {
                                     </HtmlTooltip>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary={curso.fechaRealizacion}
+                                    primary={
+                                        <Typography
+                                            color="#256994"
+                                            align="justify"
+                                        >
+                                            {curso.fechaRealizacion}
+                                        </Typography>
+                                    }
                                     secondary={
                                         <React.Fragment>
                                             <Typography

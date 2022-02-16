@@ -4,7 +4,7 @@ import email from '../../media/email.png'
 import logo from '../../media/githubIcon.ico'
 import linkedin from '../../media/linkedinx.png'
 import { device } from '../../styles/responsive'
-import Header from '../Header/Header'
+import LanguageSelector from './LanguageSelector'
 
 const NavBar = styled.nav`
     margin-top: 0px;
@@ -42,8 +42,8 @@ const NavBarLogo = styled.div`
             return `opacity:1 ; visibility: visible ;
 `
     }};
-    ${device.mobile`  font-size: 0.9rem;`}
-    ${device.tablet`  font-size: 0.9rem;`}
+    ${device.mobile`  font-size: 0.9rem; line-height: normal; align-items: center;`}
+    ${device.tablet`  font-size: 0.9rem; line-height: normal; align-items: center;`}
 `
 
 const IconBar = styled.div`
@@ -77,7 +77,7 @@ const Navbar = ({ isScrolling }) => {
             <NavBarLogo scrolling={isScrolling} onClick={toTheTop}>
                 Pablo Gallego Carmona
             </NavBarLogo>
-            <Header />
+            <LanguageSelector />
             <IconBar>
                 <a href="" target="_blank" rel="noopener norefferer">
                     <img src={email} alt="email logo" />

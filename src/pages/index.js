@@ -46,13 +46,17 @@ const IndexPage = () => {
                 </Helmet>
 
                 <Navbar isScrolling={scrollHeight} />
+
                 <Cover />
 
                 <Courses />
 
                 <About />
+
                 <Slider />
+
                 <Info />
+
                 <Footer />
             </ThemeProvider>
         </LocationProvider>

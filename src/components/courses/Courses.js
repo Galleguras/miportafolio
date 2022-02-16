@@ -9,7 +9,7 @@ const CoursesContainer = styled.div`
     color: white;
     background-color: black;
     height: 70vh;
-    ${device.mobile`flex-direction: column;`}
+    ${device.mobile`flex-direction: column; height: 100vh;`}
 `
 
 const CoursesTitle = styled.div`
@@ -29,6 +29,7 @@ const CoursesTitle = styled.div`
 const CoursesData = styled.div`
     flex: 2;
     display: flex;
+    ${device.tablet`height: 70vh`}
 `
 
 const Courses = () => {
