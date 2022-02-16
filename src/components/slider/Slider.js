@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 import { useLocationContext } from '../../context/LocationProvider'
@@ -34,6 +34,15 @@ const Slider = () => {
     const { language } = useLocationContext()
     const { t } = useTranslation()
     console.log('slidesInfo-->', slidesInfo)
+    const [value, setValue] = useState(0)
+    function onChange(value) {
+        setValue(value)
+    }
+
+    const slidesInfoFiltrado = slidesInfo.filter((item) => {
+        if (item.locale === language) return item
+    })
+    console.log('slidesInfoFiltrado-->', slidesInfoFiltrado)
 
     return (
         <CarouselContainer>
@@ -41,19 +50,16 @@ const Slider = () => {
                 <h2>{t('Mis Proyectos')}</h2>
             </CarouselTitle>
             <Carousel
+                value={value}
                 arrows
                 infinite
-                animationSpeed={200}
-                centered
-                offset={50}
-                itemWidth={400}
+                slidesPerPage={2}
+                onChange={onChange}
             >
-                {slidesInfo.map((info, key) => {
+                {slidesInfoFiltrado.map((info, key) => {
                     debugger
 
-                    if (info.locale === language) {
-                        return <Panel key={key} info={info} />
-                    } else return null
+                    return <Panel key={key} info={info} />
                 })}
             </Carousel>
         </CarouselContainer>
