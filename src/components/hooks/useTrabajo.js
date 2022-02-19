@@ -5,6 +5,7 @@ const useTrabajo = () => {
         query {
             slidesInfo: allDatoCmsTrabajo {
                 nodes {
+                    slug
                     locale
                     empresa
                     fechaInicio
@@ -15,6 +16,7 @@ const useTrabajo = () => {
                     slug
                     puesto
                     imagen {
+                        filename
                         url
                         alt
                         fluid {
@@ -27,6 +29,8 @@ const useTrabajo = () => {
     `)
 
     return slidesInfo.nodes.map((product) => ({
+        slug: product.slug,
+        id: product.id,
         locale: product.locale,
         empresa: product.empresa,
         funcion: product.funcion,

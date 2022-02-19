@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { sizes, device } from '../../styles/responsive'
-const SlideContainer = styled.div`
+import { Link } from 'gatsby'
+const SlideContainer = styled(Link)`
     height: 80%;
     border-radius: 10px;
     overflow: hidden;
@@ -41,7 +42,7 @@ const SlideContainer = styled.div`
 const Panel = ({ info }) => {
     console.log('info-->>', info)
     return (
-        <SlideContainer>
+        <SlideContainer to={`/trabajo/${info.slug}`}>
             <img src={info.imagen.srcSet} alt={info.imagen.filename} />
             <div>
                 <span>{info.empresa}</span>
