@@ -6,4 +6,52 @@
 
 // You can delete this file if you're not using it
 
+// gatsby-browser.js
+// in gastby-browser.js
+/* 
+export const shouldUpdateScroll = ({
+    routerProps: { location },
+    routerProps: { prevLocation }
+}) => {
+    const { pathname } = location
+
+    debugger
+    console.log('pathname-->', pathname)
+    console.log('prevLocation-->', prevLocation)
+
+    if (pathname === '/es/' || pathname === '/') {
+        const id = document.getElementById('SlideContainerCarousel')
+        window.scrollTo({
+            top: id?.offsetTop,
+            behavior: 'auto'
+        })
+    } else {
+        window.scrollTo(0, 0)
+    }
+
+    return false
+} */
+
 import './src/styles/global.css'
+
+export const onRouteUpdate = ({ location, prevLocation }) => {
+    const { pathname } = location
+    debugger
+    console.log('pathname-->', pathname)
+    console.log('prevLocation-->', prevLocation)
+    if ((pathname === '/es/' || pathname === '/') && prevLocation) {
+        const id = document.getElementById('SlideContainerCarousel')
+        window.scrollTo({
+            top: id?.offsetTop,
+            behavior: 'auto'
+        })
+    } else {
+        window.scrollTo(0, 0)
+    }
+
+    return false
+    /*    debugger
+    if (prevLocation || document.referrer.includes('/')) {
+        // same domain
+    } */
+}

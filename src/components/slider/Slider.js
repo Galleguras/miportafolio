@@ -45,7 +45,7 @@ const Slider = () => {
     console.log('slidesInfoFiltrado-->', slidesInfoFiltrado)
 
     return (
-        <CarouselContainer>
+        <CarouselContainer id="SlideContainerCarousel">
             <CarouselTitle>
                 <h2>{t('Mis Proyectos')}</h2>
             </CarouselTitle>
@@ -57,8 +57,6 @@ const Slider = () => {
                 onChange={onChange}
             >
                 {slidesInfoFiltrado.map((info, key) => {
-                    debugger
-
                     return <Panel key={key} info={info} />
                 })}
             </Carousel>

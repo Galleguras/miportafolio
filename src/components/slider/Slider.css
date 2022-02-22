@@ -4,7 +4,7 @@
     margin: 20px;
 }
 
-.BrainhubCarousel__arrows>span {
+.BrainhubCarousel__arrows > span {
     border-color: black;
 }
 
@@ -12,6 +12,6 @@
     background-color: white !important;
 }
 
-.BrainhubCarousel__arrows:hover>span {
+.BrainhubCarousel__arrows:hover > span {
     border-color: black !important;
 }

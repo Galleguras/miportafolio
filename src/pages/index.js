@@ -12,6 +12,8 @@ import Navbar from '../components/navbar/Navbar'
 import Slider from '../components/slider/Slider'
 import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
+import Layout from '../components/Layout/Layout'
+
 const theme = createTheme({
     palette: {
         primary: {
@@ -32,6 +34,12 @@ const IndexPage = () => {
         window.addEventListener('scroll', handleScroll)
     }, [scrollHeight])
 
+    /*    useEffect(() => {
+        debugger
+        let x = window.history
+                 window.scrollTo(0, 0) 
+    }, []) */
+
     return (
         <LocationProvider>
             <ThemeProvider theme={theme}>
@@ -44,20 +52,15 @@ const IndexPage = () => {
                         sizes="16x16"
                     />
                 </Helmet>
-
-                <Navbar isScrolling={scrollHeight} />
-
-                <Cover />
-
-                <Courses />
-
-                <About />
-
-                <Slider />
-
-                <Info />
-
-                <Footer />
+                <Layout>
+                    {/* <Navbar isScrolling={scrollHeight} /> */}
+                    <Cover />
+                    <Courses />
+                    <About />
+                    <Slider />
+                    <Info />
+                    <Footer />
+                </Layout>
             </ThemeProvider>
         </LocationProvider>
     )

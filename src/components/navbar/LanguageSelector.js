@@ -6,13 +6,15 @@ import styled from 'styled-components'
 import { sizes, device } from '../../styles/responsive'
 
 const ButtonLink = styled(Link)`
-    color: white;
+    color: white !important;
+
     text-decoration: none;
     ${device.mobile` transform: scale(0.8);`}
 `
 
 const ButtonGrouped = styled(ButtonGroup)`
-    color: white;
+    color: white !important;
+    border-color: white !important;
     ${device.mobile` transform: scale(0.8);`}
 `
 

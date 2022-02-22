@@ -15,13 +15,20 @@ const NavBar = styled.nav`
     position: fixed;
     top: 0;
     background-color: transparent;
+
+    ${(props) => {
+        if (props?.uri) return `background-color: black;`
+        else {
+            return `background-color: transparent;`
+        }
+    }};
     width: 100%;
     height: 80px !important;
     font-size: 20px;
     z-index: 1;
     ${(props) => {
         if (props.scrolling)
-            return `background-color: black;
+            return `background-color: black !important;
   transition: all 1s ease `
     }};
 `
@@ -38,7 +45,7 @@ const NavBarLogo = styled.div`
     color: white;
     cursor: pointer;
     ${(props) => {
-        if (props.scrolling && props.scrolling > 300)
+        if ((props.scrolling && props.scrolling > 300) || props?.uri)
             return `opacity:1 ; visibility: visible ;
 `
     }};
@@ -67,14 +74,14 @@ const IconBar = styled.div`
         ${device.mobile`height: 40px;`}
     }
 `
-const Navbar = ({ isScrolling }) => {
+const Navbar = ({ isScrolling, uri }) => {
     const toTheTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
 
     return (
-        <NavBar scrolling={isScrolling}>
-            <NavBarLogo scrolling={isScrolling} onClick={toTheTop}>
+        <NavBar scrolling={isScrolling} uri={uri}>
+            <NavBarLogo scrolling={isScrolling} uri={uri} onClick={toTheTop}>
                 Pablo Gallego Carmona
             </NavBarLogo>
             <LanguageSelector />

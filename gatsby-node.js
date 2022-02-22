@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `)
 
     // Template to create dynamic pages from.
-    const trabajoTemplate = path.resolve(`src/components/Trabajos.js`)
+    const trabajoTemplate = path.resolve(`src/templates/Trabajos.js`)
 
     trabajosQuery.data.allDatoCmsTrabajo.nodes.map(
         ({
