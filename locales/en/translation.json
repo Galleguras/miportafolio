@@ -9,5 +9,12 @@
     "p4": "“A modern architecture for web development based on the use of JS on the client, reusable APIs and precalculated Markup”",
     "p5": "Since then, this is the part that currently arouses the most interest in me and in which I feel most comfortable. Later I discovered Next.js, Gatsby, Styled-Components, among other frameworks and libraries on which I currently base my development to offer a modern, responsive, fast product with good performance designed to meet the needs of any client.",
 
-    "Mis Proyectos": "My Projects"
+    "Mis Proyectos": "My Projects",
+
+    "Periodo": "Range Time",
+    "Puesto": "Job",
+    "Funciones": "Functions",
+    "Herramientas/Tecnologías": "Technology/Tools",
+    "Clientes": "Customers",
+    "Actualidad": "Current"
 }

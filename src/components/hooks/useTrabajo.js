@@ -15,6 +15,7 @@ const useTrabajo = () => {
                     eht
                     slug
                     puesto
+                    clientes
                     imagen {
                         filename
                         url
@@ -38,6 +39,7 @@ const useTrabajo = () => {
         puesto: product.puesto,
         fechaInicio: product.fechaInicio,
         fechaFin: product.fechaFin,
+        clientes: product.clientes,
         imagen: {
             url: product.imagen.url,
             srcSet: product.imagen.fluid.srcSet,

@@ -10,6 +10,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 sort: { fields: slug }
             ) {
                 nodes {
+                    clientes
                     slug
                     id
                     locale
@@ -46,7 +47,8 @@ exports.createPages = async ({ graphql, actions }) => {
             funcion,
             fechaInicio,
             fechaFin,
-            imagen
+            imagen,
+            clientes
         }) => {
             return createPage({
                 path: `trabajo/${slug}`,
@@ -61,7 +63,8 @@ exports.createPages = async ({ graphql, actions }) => {
                     funcion,
                     fechaInicio,
                     fechaFin,
-                    imagen
+                    imagen,
+                    clientes
                 }
             })
         }

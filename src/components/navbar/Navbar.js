@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import email from '../../media/email.png'
@@ -32,7 +33,8 @@ const NavBar = styled.nav`
   transition: all 1s ease `
     }};
 `
-const NavBarLogo = styled.div`
+const NavBarLogo = styled(Link)`
+    text-decoration: none;
     margin-top: 0px;
     opacity: 0;
     visibility: hidden;
@@ -81,7 +83,12 @@ const Navbar = ({ isScrolling, uri }) => {
 
     return (
         <NavBar scrolling={isScrolling} uri={uri}>
-            <NavBarLogo scrolling={isScrolling} uri={uri} onClick={toTheTop}>
+            <NavBarLogo
+                to={'/'}
+                scrolling={isScrolling}
+                uri={uri}
+                onClick={toTheTop}
+            >
                 Pablo Gallego Carmona
             </NavBarLogo>
             <LanguageSelector />

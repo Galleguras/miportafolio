@@ -15,7 +15,7 @@ export const shouldUpdateScroll = ({
 }) => {
     const { pathname } = location
 
-    debugger
+    
     console.log('pathname-->', pathname)
     console.log('prevLocation-->', prevLocation)
 
@@ -36,7 +36,7 @@ import './src/styles/global.css'
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
     const { pathname } = location
-    debugger
+
     console.log('pathname-->', pathname)
     console.log('prevLocation-->', prevLocation)
     if ((pathname === '/es/' || pathname === '/') && prevLocation) {
@@ -50,7 +50,7 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
     }
 
     return false
-    /*    debugger
+    /*    
     if (prevLocation || document.referrer.includes('/')) {
         // same domain
     } */

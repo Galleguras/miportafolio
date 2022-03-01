@@ -35,7 +35,7 @@ const IndexPage = () => {
     }, [scrollHeight])
 
     /*    useEffect(() => {
-        debugger
+        
         let x = window.history
                  window.scrollTo(0, 0) 
     }, []) */

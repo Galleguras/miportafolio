@@ -14,7 +14,9 @@ const CarouselContainer = styled.div`
     align-items: center;
     background-color: black;
     padding: 30px 0 30px 0;
-    ${device.pc`flex-direction: column;`} li {
+    ${device.mobile`flex-direction: column;`}
+    ${device.tablet`flex-direction: column;`}
+    li {
         margin: 5px !important;
         ${device.mobile`margin: 5px !important;`}
         ${device.tablet`margin: 5px !important;`}
