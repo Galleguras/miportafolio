@@ -4,14 +4,15 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout/Layout'
 import { device } from '../styles/responsive'
-
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import IconButton from '@mui/material/IconButton'
 const Contenido = styled.div`
     border: 3px solid black;
     display: flex;
 
     ${device.mobile`flex-direction: column;`};
     ${device.tablet`flex-direction: row; margin-top: 120px`};
-    ${device.pc`flex-direction: row; margin: 120px;`};
+    ${device.pc`flex-direction: row; margin: 120px 120px 50px 120px`};
     > img {
         ${device.pc`flex: 1;   object-fit: contain;`};
         ${device.tablet`flex: 1;`};
@@ -19,14 +20,20 @@ const Contenido = styled.div`
     }
     > div {
         overflow-y: scroll;
-        ${device.mobile`background-color: #2aeb87; border-top: 3px solid black; padding: 0px;`};
-        ${device.tablet`background-color: #ced63b; border-left: 3px solid black; padding: 20px;  flex: 2;  height: 400px;`};
-        ${device.pc`background-color: #00fffb; border-left: 3px solid black; padding: 20px;  flex: 2;  height: 500px;`};
+        ${device.mobile`border-top: 3px solid black; padding: 0px;`};
+        ${device.tablet`border-left: 3px solid black; padding: 20px;  flex: 2;  height: 400px;`};
+        ${device.pc`border-left: 3px solid black; padding: 20px;  flex: 2;  height: 500px;`};
 
         > h2 {
             font-weight: bold;
         }
     }
+`
+
+const BotonVolver = styled(Link)`
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
 `
 const Trabajos = ({ data, pageContext, uri }) => {
     const { t, i18n } = useTranslation()
@@ -63,7 +70,11 @@ const Trabajos = ({ data, pageContext, uri }) => {
                 </Contenido>
                 {/*     <div>Volver</div> */}
 
-                {/*      <Link to={'/'}>volver</Link> */}
+                <BotonVolver to={'/'}>
+                    <IconButton sx={{ color: 'black' }}>
+                        <ArrowBackIcon fontSize="large" />
+                    </IconButton>
+                </BotonVolver>
             </Layout>
         </>
     )

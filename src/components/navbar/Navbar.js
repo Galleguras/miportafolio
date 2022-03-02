@@ -33,8 +33,7 @@ const NavBar = styled.nav`
   transition: all 1s ease `
     }};
 `
-const NavBarLogo = styled(Link)`
-    text-decoration: none;
+const NavBarLogo = styled.div`
     margin-top: 0px;
     opacity: 0;
     visibility: hidden;
@@ -53,6 +52,10 @@ const NavBarLogo = styled(Link)`
     }};
     ${device.mobile`  font-size: 0.9rem; line-height: normal; align-items: center;`}
     ${device.tablet`  font-size: 0.9rem; line-height: normal; align-items: center;`}
+    > Link {
+        text-decoration: none !important;
+        background-color: red;
+    }
 `
 
 const IconBar = styled.div`
@@ -83,12 +86,7 @@ const Navbar = ({ isScrolling, uri }) => {
 
     return (
         <NavBar scrolling={isScrolling} uri={uri}>
-            <NavBarLogo
-                to={'/'}
-                scrolling={isScrolling}
-                uri={uri}
-                onClick={toTheTop}
-            >
+            <NavBarLogo scrolling={isScrolling} uri={uri} onClick={toTheTop}>
                 Pablo Gallego Carmona
             </NavBarLogo>
             <LanguageSelector />
