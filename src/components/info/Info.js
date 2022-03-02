@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from 'styled-components'
 import { device } from '../../styles/responsive'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 const InfoContainer = styled.div`
     width: 100%;
     height: 300px;
@@ -21,15 +22,17 @@ const Inf = styled.div`
     height: 100%;
     h1 {
         text-align: center;
-        font-size: 25px;
+        font-size: 45px;
+        font-weight: bold;
     }
 `
 
 const Info = () => {
+    const { t, i18n } = useTranslation()
     return (
         <InfoContainer>
             <Inf>
-                <h1>Let's work together and create something unique</h1>
+                <h1>{t('Trabajemos juntos y creemos algo único')}</h1>
             </Inf>
         </InfoContainer>
     )
