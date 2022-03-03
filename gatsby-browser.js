@@ -36,10 +36,15 @@ import './src/styles/global.css'
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
     const { pathname } = location
-
+    debugger
     console.log('pathname-->', pathname)
     console.log('prevLocation-->', prevLocation)
-    if ((pathname === '/es/' || pathname === '/') && prevLocation) {
+    if (
+        prevLocation?.pathname !== '/es/' &&
+        prevLocation?.pathname !== '/' &&
+        prevLocation?.pathname !== '/contacto' &&
+        prevLocation
+    ) {
         const id = document.getElementById('SlideContainerCarousel')
         window.scrollTo({
             top: id?.offsetTop,

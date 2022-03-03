@@ -91,9 +91,9 @@ const Navbar = ({ isScrolling, uri }) => {
             </NavBarLogo>
             <LanguageSelector />
             <IconBar>
-                <a href="" target="_blank" rel="noopener norefferer">
+                <Link to="/contacto">
                     <img src={email} alt="email logo" />
-                </a>
+                </Link>
                 <a
                     href="https://github.com/Galleguras"
                     target="_blank"

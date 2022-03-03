@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { sizes, device } from '../../styles/responsive'
 import { Link } from 'gatsby'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 const SlideContainer = styled(Link)`
     height: 80%;
     border-radius: 10px;
@@ -41,8 +42,15 @@ const SlideContainer = styled(Link)`
 
 const Panel = ({ info }) => {
     console.log('info-->>', info)
+    const { language } = useI18next()
     return (
-        <SlideContainer to={`/trabajo/${info.slug}`}>
+        <SlideContainer
+            to={
+                language == 'es'
+                    ? `/es/trabajo/${info.slug}`
+                    : `trabajo/${info.slug}`
+            }
+        >
             <img src={info.imagen.srcSet} alt={info.imagen.filename} />
             <div>
                 <span>{info.empresa}</span>
