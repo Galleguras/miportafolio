@@ -9,7 +9,7 @@ const CoursesContainer = styled.div`
     color: white;
     background-color: black;
     height: 70vh;
-    ${device.mobile`flex-direction: column; height: 100vh;`}
+    ${device.mobile`flex-direction: column; `}
 `
 
 const CoursesTitle = styled.div`
@@ -19,7 +19,7 @@ const CoursesTitle = styled.div`
     font-size: 30px;
     justify-content: center;
     align-items: center;
-    ${device.tablet`padding:0 10px;font-size: 20px;`}
+    ${device.tablet`padding:0 10px;font-size: 20px;`};
     ${device.mobile`padding:0 10px;font-size: 20px;`}
     h2 {
         word-spacing: 9999px;
@@ -29,7 +29,8 @@ const CoursesTitle = styled.div`
 const CoursesData = styled.div`
     flex: 2;
     display: flex;
-    ${device.tablet`height: 70vh`}
+    ${device.tablet`height: 70vh`};
+    ${device.mobile`height: 20vh;`}
 `
 
 const Courses = () => {

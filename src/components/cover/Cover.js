@@ -16,7 +16,8 @@ const CoverContainer = styled.div`
     h1 {
         color: white;
         font-size: 100px;
-        ${device.pc`font-size: 70px;text-align: center;`}
+        ${device.pc`font-size: 70px;text-align: center;`};
+        ${device.mobile`font-size: 40px;text-align: center;`}
     }
     video {
         object-fit: cover;
@@ -30,6 +31,11 @@ const CoverContainer = styled.div`
         color: white;
         font-size: 32px;
         ${device.pc`text-align: center;font-size: 22px;width: 85%;`}
+        ${device.mobile`text-align: center;font-size: 18px;`}
+    }
+    div {
+        text-align: center;
+        padding: 10px;
     }
 `
 /* import {graphql,} from "gatsby" */
@@ -60,7 +66,7 @@ const Cover = () => {
             }
         }
     `)
-    console.log(image.edges[0].node.publicURL)
+
     return (
         <CoverContainer>
             <video
@@ -69,8 +75,11 @@ const Cover = () => {
                 autoPlay
                 loop
                 muted
+                playsinline
             />
-            <h1> Pablo Gallego Carmona </h1> <p> {t('title')} </p>
+            <div>
+                <h1> Pablo Gallego Carmona </h1> <p> {t('title')} </p>
+            </div>
         </CoverContainer>
     )
 }

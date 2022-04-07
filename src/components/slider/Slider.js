@@ -18,7 +18,7 @@ const CarouselContainer = styled.div`
     ${device.tablet`flex-direction: column;`}
     li {
         margin: 5px !important;
-        ${device.mobile`margin: 5px !important;`}
+        ${device.mobile` height:800px; display: inline-block; margin: 5px !important;`}
         ${device.tablet`margin: 5px !important;`}
     }
 `
@@ -53,7 +53,7 @@ const Slider = () => {
             </CarouselTitle>
             <Carousel
                 value={value}
-                arrows
+                /*    arrows */
                 infinite
                 slidesPerPage={2}
                 onChange={onChange}

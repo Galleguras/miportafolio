@@ -4,7 +4,7 @@ import { sizes, device } from '../../styles/responsive'
 import { Link } from 'gatsby'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 const SlideContainer = styled(Link)`
-    height: 80%;
+    height: 60%;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -38,6 +38,7 @@ const SlideContainer = styled(Link)`
             text-align: center;
         }
     }
+    ${device.mobile` height: 40%;`}
 `
 
 const Panel = ({ info }) => {

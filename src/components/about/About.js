@@ -22,6 +22,7 @@ const AboutDesc = styled.div`
     h3 {
         margin-bottom: 30px;
         font-size: 28px;
+        text-align: center;
     }
     p {
         line-height: 1.5;
@@ -29,7 +30,10 @@ const AboutDesc = styled.div`
     }
 `
 
-const AboutImg = styled.img``
+const AboutImg = styled.img`
+    ${device.mobile`height: 500px;object-fit: scale-down;padding-bottom: 10px; `}
+    ${device.tablet`height: 500px;object-fit: scale-down;padding-bottom: 10px;`}
+`
 
 const About = () => {
     const { t } = useTranslation()

@@ -36,7 +36,7 @@ import './src/styles/global.css'
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
     const { pathname } = location
-    debugger
+
     console.log('pathname-->', pathname)
     console.log('prevLocation-->', prevLocation)
     if (
