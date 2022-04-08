@@ -72,10 +72,10 @@ const Cover = () => {
             <video
                 className="video"
                 src={image.edges[0].node.publicURL}
+                playsInline
                 autoPlay
-                loop
                 muted
-                playsinline
+                loop
             />
             <div>
                 <h1> Pablo Gallego Carmona </h1> <p> {t('title')} </p>
