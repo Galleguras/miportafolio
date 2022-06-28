@@ -17,8 +17,9 @@ const AboutContainer = styled.div`
     ${device.pc`height: 60vh;`}
 `
 const AboutDesc = styled.div`
-    padding: 0px 20px;
+    padding: 0px 80px;
     justify-content: center;
+    align-self: center;
     h3 {
         margin-bottom: 30px;
         font-size: 28px;
@@ -28,6 +29,8 @@ const AboutDesc = styled.div`
         line-height: 1.5;
         text-align: justify;
     }
+    ${device.tablet`padding: 0px 20px;`}
+    ${device.mobile`padding: 0px 20px;`}
 `
 
 const AboutImg = styled.img`

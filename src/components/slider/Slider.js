@@ -24,11 +24,11 @@ const CarouselContainer = styled.div`
 `
 const CarouselTitle = styled.div`
     color: white;
-    width: 40%;
+    width: 30%;
     text-align: center;
     font-size: 30px;
     padding: 0 100px 0 100px;
-    ${device.pc`width: 100%;text-align: center;padding: 50px 0 50px 0;`}
+    /*   ${device.pc`width: 100%;text-align: center;padding: 50px 0 50px 0;`} */
 `
 
 const Slider = () => {

@@ -8,8 +8,13 @@ import { Link } from 'gatsby'
 const Contenido = styled.div`
     border: 3px solid black;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 
-    ${device.mobile`flex-direction: column;`};
+    ${device.mobile`flex-direction: column; margin-top: 120px`};
     ${device.tablet`flex-direction: row; margin-top: 120px`};
     ${device.pc`flex-direction: row; margin: 120px 120px 50px 120px`};
 `
@@ -19,12 +24,16 @@ const BotonVolver = styled(Link)`
     justify-content: center;
     display: flex;
 `
+const FormularioContacto = styled.div`
+    border: 3px solid black;
+`
 
 const contacto = () => {
     return (
         <Layout uri={true}>
             <Contenido>
-                <h1>asd</h1>
+                <FormularioContacto>asd</FormularioContacto>
+                <FormularioContacto>asdasdsadd</FormularioContacto>
             </Contenido>
             <BotonVolver to={'/'}>
                 <IconButton sx={{ color: 'black' }}>

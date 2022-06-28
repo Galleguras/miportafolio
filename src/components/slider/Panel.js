@@ -4,7 +4,7 @@ import { sizes, device } from '../../styles/responsive'
 import { Link } from 'gatsby'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 const SlideContainer = styled(Link)`
-    height: 60%;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     position: relative;

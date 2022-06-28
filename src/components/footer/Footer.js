@@ -2,7 +2,9 @@ import React from 'react'
 
 import styled from 'styled-components'
 import { device } from '../../styles/responsive'
-
+import { useTranslation } from 'gatsby-plugin-react-i18next'
+import WhatsApp from '../../media/WhatsApp.png'
+import { fontWeight } from '@mui/system'
 const Foter = styled.footer`
     width: 100%;
     height: 100vh;
@@ -23,7 +25,9 @@ const FooterInfo = styled.div`
     h1 {
         padding-bottom: 15px;
     }
-    ${device.pc`text-align: center;padding: 0;font-size: 20px;`}
+    ${device.pc`text-align: center;padding: 100px 0 30px 0;font-size: 20px;`}
+    ${device.tablet`text-align: center;padding: 100px 0 30px 0;font-size: 20px;`}
+     ${device.mobile`text-align: center;padding: 100px 0 30px 0;font-size: 20px;`}
 `
 
 const FooterContact = styled.div`
@@ -31,80 +35,67 @@ const FooterContact = styled.div`
     padding: 100px 0 30px 50px;
     width: 70%;
     margin: 0 auto;
+    img {
+        width: 25px;
+        padding: 0 5px;
+    }
     ${device.pc`font-size: 16px;padding: 100px 0 30px 0;text-align: center;`}
+    ${device.tablet`text-align: center;padding: 100px 0 30px 0;font-size: 20px;`}
+     ${device.mobile`text-align: center;padding: 10px 0 30px 0;font-size: 20px;`}
 `
 const FooterSns = styled.div`
-    width: 70%;
     position: absolute;
     bottom: 40px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+
     align-items: center;
-    ${device.pc`grid-template-columns: 1fr;text-align: center;`}
-`
-const snsLinks = styled.div`
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    i {
-        color: white;
-        font-size: 35px;
-        margin: 0 auto;
-        padding-bottom: 10px;
-        border-bottom: 4px solid transparent;
-        &:hover {
-            border-color: white;
-            transition: all 0.3s ease-out;
-        }
-    }
+    text-align: center;
 `
 
 const DesignBy = styled.div`
     font-size: 18px;
-    padding-left: 50px;
+    font-weight: bold;
     color: white;
     ${device.pc` padding: 0 0 40px 0;`}
 `
 
 const Footer = () => {
+    const { t } = useTranslation()
+    const mailtoHref =
+        'mailto:pablogallegocarmona@gmail.com?subject=Contacto desde Portafolio'
+    const sendwatsAppMsg = 'https://api.whatsapp.com/send?phone=607425619'
     return (
         <Foter>
             <FooterInfo>
-                <h1>Your Name</h1>
-                <p>Based in Your City</p>
+                <h1>{t('Pablo Gallego Carmona')}</h1>
+                <p>{t('España (Granada) Av. del Conocimiento, 41, 18016')}</p>
             </FooterInfo>
             <FooterContact>
-                <h3>Contact me</h3>
-                <p>And let's get down to work</p>
+                <h3>{t('Contacta conmigo')} :</h3>
+                <p style={{ fontWeight: 'bold', fontSize: 'x-large' }}>
+                    +34 607 42 56 19
+                    <a href={sendwatsAppMsg}>
+                        <img src={WhatsApp} alt="Chat WhatsApp" />
+                    </a>
+                </p>
+
+                <a href={mailtoHref}>
+                    <p>pablogallegocarmona@gmail.com</p>
+                </a>
+                <p
+                    style={{
+                        fontWeight: 'bold',
+                        fontSize: 'x-large',
+                        marginTop: '50px'
+                    }}
+                >
+                    " {t('Y pongámonos manos a la obra')} "
+                </p>
             </FooterContact>
             <FooterSns>
-                <DesignBy>Design By Your Name</DesignBy>
-                <snsLinks>
-                    <a
-                        href="https://linkedin.com"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i></i>
-                    </a>
-                    <a
-                        href="https://twitter.com"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i></i>
-                    </a>
-                    <a
-                        href="https://facebook.com"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i></i>
-                    </a>
-                </snsLinks>
+                <DesignBy>{t('Diseñado por Pablo Gallego Carmona')}</DesignBy>
             </FooterSns>
         </Foter>
     )

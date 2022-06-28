@@ -12,22 +12,31 @@ const Contenido = styled.div`
     border: 3px solid black;
     display: flex;
 
-    ${device.mobile`flex-direction: column;`};
+    ${device.mobile`flex-direction: row; margin-top: 120px`};
     ${device.tablet`flex-direction: row; margin-top: 120px`};
-    ${device.pc`flex-direction: row; margin: 120px 120px 50px 120px`};
-    > img {
-        ${device.pc`flex: 1;   object-fit: contain;`};
-        ${device.tablet`flex: 1;`};
-        ${device.mobile`flex: 1; `};
-    }
+    ${device.pc`flex-direction: row; margin: 120px 120px 5px 120px`};
+
     > div {
-        overflow-y: scroll;
-        ${device.mobile`border-top: 3px solid black; padding: 0px;`};
-        ${device.tablet`border-left: 3px solid black; padding: 20px;  flex: 2;  height: 400px;`};
-        ${device.pc`border-left: 3px solid black; padding: 20px;  flex: 2;  height: 500px;`};
+        //overflow-y: scroll;
+        ${device.mobile`padding: 10px;`};
+        ${device.tablet` padding: 20px;   `};
+        ${device.pc` padding: 20px;    `};
 
         > h2 {
             font-weight: bold;
+        }
+        h2:first-child {
+            padding: 5px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+        }
+        img {
+            width: 300px;
+            float: right;
+            ${device.mobile`  width: 150px`};
+            ${device.tablet`   width: 250px `};
         }
     }
 `
@@ -54,11 +63,14 @@ const Trabajos = ({ data, pageContext, uri }) => {
         <>
             <Layout uri={uri}>
                 <Contenido>
-                    <img src={imagen.fluid.srcSet} alt={imagen.filename} />
+                    {/* */}
+                    {/*  <div>asd</div> */}
                     <div>
                         <h2>{`${fechaInicio} - ${
                             fechaFin ? fechaFin : t('Actualidad')
                         }`}</h2>
+
+                        <img src={imagen.fluid.srcSet} alt={imagen.filename} />
                         <h2>{t('Empresa')}:</h2>
                         <p>{empresa}</p>
                         <h2>{t('Clientes')}:</h2>
