@@ -8,7 +8,6 @@ import Courses from '../components/courses/Courses'
 import Cover from '../components/cover/Cover'
 import Footer from '../components/footer/Footer'
 import Info from '../components/info/Info'
-import Navbar from '../components/navbar/Navbar'
 import Slider from '../components/slider/Slider'
 import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
@@ -22,9 +21,8 @@ const theme = createTheme({
     }
 })
 const IndexPage = () => {
-    const { t } = useTranslation()
     const [scrollHeight, setScrollHeight] = useState(0)
-    const [idioma, setIdioma] = useState()
+
     const handleScroll = () => {
         const position = window.pageYOffset
         setScrollHeight(position)

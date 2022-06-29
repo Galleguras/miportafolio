@@ -23,7 +23,6 @@ const HtmlTooltip = styled(({ className, ...props }) => (
     }
 }))
 const CoursesList = () => {
-    const x = 'es'
     const { language } = useLocationContext()
     const query = graphql`
         query {

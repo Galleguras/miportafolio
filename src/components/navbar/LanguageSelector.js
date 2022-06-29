@@ -3,7 +3,7 @@ import ButtonGroup from '@mui/material/ButtonGroup'
 import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import styled from 'styled-components'
-import { sizes, device } from '../../styles/responsive'
+import { device } from '../../styles/responsive'
 
 const ButtonLink = styled(Link)`
     color: white !important;

@@ -1,6 +1,6 @@
 import { graphql, Link } from 'gatsby'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import { useLocationContext } from '../context/LocationProvider'
+
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/Layout/Layout'
@@ -48,7 +48,7 @@ const BotonVolver = styled(Link)`
 `
 const Trabajos = ({ data, pageContext, uri }) => {
     const { language } = useI18next()
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
     const {
         eht,
         empresa,
@@ -85,7 +85,7 @@ const Trabajos = ({ data, pageContext, uri }) => {
                 </Contenido>
                 {/*     <div>Volver</div> */}
 
-                <BotonVolver to={language == 'es' ? '/es/' : '/'}>
+                <BotonVolver to={language === 'es' ? '/es/' : '/'}>
                     <IconButton sx={{ color: 'black' }}>
                         <ArrowBackIcon fontSize="large" />
                     </IconButton>

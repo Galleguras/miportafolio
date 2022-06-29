@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { sizes, device } from '../../styles/responsive'
+import { device } from '../../styles/responsive'
 import { Link } from 'gatsby'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 const SlideContainer = styled(Link)`
@@ -47,7 +47,7 @@ const Panel = ({ info }) => {
     return (
         <SlideContainer
             to={
-                language == 'es'
+                language === 'es'
                     ? `/es/trabajo/${info.slug}`
                     : `trabajo/${info.slug}`
             }

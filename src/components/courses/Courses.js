@@ -35,8 +35,6 @@ const CoursesData = styled.div`
 
 const Courses = () => {
     const { t } = useTranslation()
-    const { language } = useLocationContext()
-    /*  const { language } = useI18next() */
 
     return (
         <CoursesContainer>

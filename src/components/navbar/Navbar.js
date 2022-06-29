@@ -97,14 +97,14 @@ const Navbar = ({ isScrolling, uri }) => {
                 <a
                     href="https://github.com/Galleguras"
                     target="_blank"
-                    rel="noopener norefferer"
+                    rel="norefferer"
                 >
                     <img src={logo} alt="github logo" />
                 </a>
                 <a
                     href="https://es.linkedin.com/in/pablo-gallego-carmona-327847a9"
                     target="_blank"
-                    rel="noopener norefferer"
+                    rel="norefferer"
                 >
                     <img src={linkedin} alt="linkedin logo" />
                 </a>

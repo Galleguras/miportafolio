@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { device } from '../../styles/responsive'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import WhatsApp from '../../media/WhatsApp.png'
-import { fontWeight } from '@mui/system'
+
 const Foter = styled.footer`
     width: 100%;
     height: 100vh;

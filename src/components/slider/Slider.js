@@ -5,7 +5,7 @@ import { useLocationContext } from '../../context/LocationProvider'
 import Panel from './Panel'
 import './Slider.css'
 import styled from 'styled-components'
-import { sizes, device } from '../../styles/responsive'
+import { device } from '../../styles/responsive'
 import useTrabajo from '../hooks/useTrabajo'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 const CarouselContainer = styled.div`

@@ -1,7 +1,6 @@
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import styled from 'styled-components'
-import miFoto from '../../media/miFoto.png'
 import { device } from '../../styles/responsive'
 import MiFoto from '../../media/yo.jpg'
 const AboutContainer = styled.div`

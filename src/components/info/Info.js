@@ -28,7 +28,7 @@ const Inf = styled.div`
 `
 
 const Info = () => {
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
     return (
         <InfoContainer>
             <Inf>
