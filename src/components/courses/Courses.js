@@ -1,7 +1,7 @@
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import styled from 'styled-components'
-import { useLocationContext } from '../../context/LocationProvider'
+
 import { device } from '../../styles/responsive'
 import CoursesList from './CoursesList'
 const CoursesContainer = styled.div`
