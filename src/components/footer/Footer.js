@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { device } from '../../styles/responsive'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import WhatsApp from '../../media/WhatsApp.png'
+import Donate from '../../media/donate.png'
 import Map from '../map/Map'
 
 const Foter = styled.footer`
@@ -40,9 +41,9 @@ const FooterContact = styled.div`
         width: 25px;
         padding: 0 5px;
     }
-    ${device.pc`font-size: 16px;padding: 30px 0 30px 0;text-align: center;`}
-    ${device.tablet`text-align: center;padding: 30px 0 30px 0;font-size: 20px;`}
-     ${device.mobile`text-align: center;padding: 10px 0 30px 0;font-size: 20px;`}
+    ${device.pc`font-size: 16px;text-align: center;`}
+    ${device.tablet`text-align: center;font-size: 20px;`}
+     ${device.mobile`text-align: center;font-size: 20px;`}
 `
 const FooterSns = styled.div`
     bottom: 40px;
@@ -80,11 +81,10 @@ const Footer = () => {
                         <img src={WhatsApp} alt="Chat WhatsApp" />
                     </a>
                 </p>
-
                 <a href={mailtoHref}>
                     <p>pablogallegocarmona@gmail.com</p>
                 </a>
-                <p
+                {/*     <p
                     style={{
                         fontWeight: 'bold',
                         fontSize: 'x-large',
@@ -92,11 +92,21 @@ const Footer = () => {
                     }}
                 >
                     " {t('Y pongámonos manos a la obra')} "
-                </p>
+                </p> */}
+
                 <FooterSns>
                     <DesignBy>
                         {t('Diseñado por Pablo Gallego Carmona')}
                     </DesignBy>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=EMX9TV2ZRCGZQ">
+                        <img
+                            src={Donate}
+                            style={{
+                                width: '100px',
+                                padding: '10px'
+                            }}
+                        />
+                    </a>
                 </FooterSns>
             </FooterContact>
         </Foter>
