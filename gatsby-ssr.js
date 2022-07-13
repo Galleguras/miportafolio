@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+/* const React = require('react')
 
-// You can delete this file if you're not using it
+exports.onRenderBody = ({ setPreBodyComponents }) => {
+    setPreBodyComponents(
+        <script
+            key={0}
+            src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+            charSet="UTF-8"
+        />
+    )
+}
+ */

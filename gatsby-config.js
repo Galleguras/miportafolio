@@ -9,6 +9,12 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: 'gatsby-plugin-load-script',
+            options: {
+                src: 'https://www.paypalobjects.com/donate/sdk/donate-sdk.js' // Change to the script filename
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/locales`,
