@@ -1,5 +1,4 @@
 import React from 'react'
-
 import styled from 'styled-components'
 import { device } from '../../styles/responsive'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
