@@ -6,7 +6,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next'
 import WhatsApp from '../../media/WhatsApp.png'
 import Donate from '../../media/donate.png'
 import Map from '../map/Map'
-import DonateButton from '../payment/DonateButton'
+
 const Foter = styled.footer`
     width: 100%;
     height: 100vh;
@@ -70,7 +70,7 @@ const Footer = () => {
         <Foter>
             <FooterInfo>
                 <h1>{t('Pablo Gallego Carmona')}</h1>
-                <DonateButton />
+
                 <p>{t('España (Granada) Av. del Conocimiento, 41, 18016')}</p>
                 <Map height="100px" width="100px" />
             </FooterInfo>
