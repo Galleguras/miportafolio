@@ -1,6 +1,5 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { graphql } from 'gatsby'
-import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React, { useEffect, useState } from 'react'
 import Helmet from 'react-helmet'
 import About from '../components/about/About'
