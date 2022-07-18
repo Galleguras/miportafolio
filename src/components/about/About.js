@@ -49,7 +49,6 @@ const About = () => {
                 <p>{t('p4')}</p>
                 <p>{t('p5')}</p>
             </AboutDesc>
-
             <AboutImg src={MiFoto} />
         </AboutContainer>
     )
