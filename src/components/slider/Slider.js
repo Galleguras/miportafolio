@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import Carousel from '@brainhubeu/react-carousel'
-import '@brainhubeu/react-carousel/lib/style.css'
+
 import { useLocationContext } from '../../context/LocationProvider'
-import Panel from './Panel'
-import './Slider.css'
+import Carousel from '../carousel/Carousel'
 import styled from 'styled-components'
 import { device } from '../../styles/responsive'
 import useTrabajo from '../hooks/useTrabajo'
@@ -47,21 +45,8 @@ const Slider = () => {
     console.log('slidesInfoFiltrado-->', slidesInfoFiltrado)
 
     return (
-        <CarouselContainer id="SlideContainerCarousel">
-            <CarouselTitle>
-                <h2>{t('Mis Proyectos')}</h2>
-            </CarouselTitle>
-            <Carousel
-                value={value}
-                /*    arrows */
-                infinite
-                slidesPerPage={2}
-                onChange={onChange}
-            >
-                {slidesInfoFiltrado.map((info, key) => {
-                    return <Panel key={key} info={info} />
-                })}
-            </Carousel>
+        <CarouselContainer>
+            <Carousel />
         </CarouselContainer>
     )
 }
