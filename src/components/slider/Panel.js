@@ -4,14 +4,21 @@ import { device } from '../../styles/responsive'
 import { Link } from 'gatsby'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 const SlideContainer = styled(Link)`
-    height: 100%;
-    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    border-radius: 1px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     background-color: white;
-    min-width: inherit;
+
     display: flex;
+    /*     li {
+        width: auto;
+        height: auto;
+        min-width: auto;
+        min-height: auto;
+    } */
     img {
         object-fit: fill;
         transition: all 0.2s ease-in-out;

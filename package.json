@@ -5,7 +5,7 @@
     "version": "0.1.0",
     "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
-          "@brainhubeu/react-carousel": "^1.19.26",
+        "@brainhubeu/react-carousel": "^1.19.26",
         "@emotion/react": "^11.7.1",
         "@emotion/styled": "^11.6.0",
         "@mui/icons-material": "^5.3.1",
