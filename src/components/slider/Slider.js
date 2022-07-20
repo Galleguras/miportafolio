@@ -24,7 +24,7 @@ const CarouselContainer = styled.div`
 `
 const CarouselTitle = styled.div`
     color: white;
-    width: 30%;
+
     text-align: center;
     font-size: 30px;
     padding: 0 100px 0 100px;
@@ -53,9 +53,9 @@ const Slider = () => {
             </CarouselTitle>
             <Carousel
                 value={value}
-                /*    arrows */
+                arrows
                 infinite
-                slidesPerPage={2}
+                slidesPerPage={3}
                 onChange={onChange}
             >
                 {slidesInfoFiltrado.map((info, key) => {
