@@ -18,8 +18,8 @@ const CarouselContainer = styled.div`
     ${device.tablet`flex-direction: column;`}
     li {
         margin: 5px !important;
-        ${device.mobile` height:800px; display: inline-block; margin: 5px !important;`}
-        ${device.tablet`margin: 5px !important;`}
+        ${device.mobile`  `}
+        ${device.tablet``}
     }
 `
 const CarouselTitle = styled.div`
@@ -53,10 +53,10 @@ const Slider = () => {
             </CarouselTitle>
             <Carousel
                 value={value}
-                arrows
                 infinite
                 slidesPerPage={3}
                 onChange={onChange}
+                itemWidth={400}
             >
                 {slidesInfoFiltrado.map((info, key) => {
                     return <Panel key={key} info={info} />
