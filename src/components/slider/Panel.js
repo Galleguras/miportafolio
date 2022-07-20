@@ -13,14 +13,11 @@ const SlideContainer = styled(Link)`
     background-color: white;
 
     display: flex;
-    /*     li {
-        width: auto;
-        height: auto;
-        min-width: auto;
-        min-height: auto;
-    } */
+
     img {
-        object-fit: fill;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
         transition: all 0.2s ease-in-out;
 
         &:hover {
@@ -33,19 +30,18 @@ const SlideContainer = styled(Link)`
         position: absolute;
         bottom: 0;
         right: 0;
-        min-width: 70%;
+        min-width: 100%;
 
-        border-top-left-radius: 10px;
+        border-top-left-radius: 1px;
         opacity: 0.8;
         span {
             color: white;
             display: block;
             font-size: 22px;
-            padding: 20px 0 20px 10px;
+            padding: 10px 0 10px 10px;
             text-align: center;
         }
     }
-    ${device.mobile` height: 40%;`}
 `
 
 const Panel = ({ info }) => {
