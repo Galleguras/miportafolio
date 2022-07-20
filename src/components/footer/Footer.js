@@ -20,7 +20,7 @@ const Foter = styled.footer`
 `
 
 const FooterInfo = styled.div`
-    font-size: 35px;
+    font-size: 15px;
     padding: 150px 0 30px 50px;
     width: 70%;
     margin: 0 auto;
@@ -58,7 +58,7 @@ const DesignBy = styled.div`
     font-size: 18px;
     font-weight: bold;
     color: white;
-    ${device.pc` padding: 0 0 40px 0;`}
+    padding: 20px 0;
 `
 
 const Footer = () => {
@@ -69,10 +69,10 @@ const Footer = () => {
     return (
         <Foter>
             <FooterInfo>
-                <h1>{t('Pablo Gallego Carmona')}</h1>
+                {/*     <h1>{t('Pablo Gallego Carmona')}</h1> */}
 
                 <p>{t('España (Granada) Av. del Conocimiento, 41, 18016')}</p>
-                <Map height="100px" width="100px" />
+                <Map height="150px" width="200px" />
             </FooterInfo>
             <FooterContact>
                 <h3>{t('Contacta conmigo')} :</h3>
@@ -82,7 +82,7 @@ const Footer = () => {
                         <img src={WhatsApp} alt="Chat WhatsApp" />
                     </a>
                 </p>
-                <a href={mailtoHref}>
+                <a href={mailtoHref} style={{ textDecoration: 'none' }}>
                     <p>pablogallegocarmona@gmail.com</p>
                 </a>
                 {/*     <p
