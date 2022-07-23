@@ -6,7 +6,26 @@ import logo from '../../media/githubIcon.ico'
 import linkedin from '../../media/linkedinx.png'
 import { device } from '../../styles/responsive'
 import LanguageSelector from './LanguageSelector'
+import Modal from '@mui/material/Modal'
+import Backdrop from '@mui/material/Backdrop'
+import Box from '@mui/material/Box'
+import Contact from '../contact/Contact'
+import TextField from '@mui/material/TextField'
+import Fade from '@mui/material/Fade'
 
+import Typography from '@mui/material/Typography'
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4
+}
 const NavBar = styled.nav`
     margin-top: 0px;
     display: flex;
@@ -84,16 +103,24 @@ const Navbar = ({ isScrolling, uri }) => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
 
+    const [open, setOpen] = React.useState(false)
+    const handleOpen = () => setOpen(true)
+    const handleClose = () => setOpen(false)
+
     return (
         <NavBar scrolling={isScrolling} uri={uri}>
             <NavBarLogo scrolling={isScrolling} uri={uri} onClick={toTheTop}>
                 Pablo Gallego Carmona
-            </NavBarLogo>
+            </NavBarLogo>{' '}
+            <TextField
+                id="outlined-basic"
+                label="Outlined"
+                variant="outlined"
+            />
             <LanguageSelector />
             <IconBar>
-                <Link to="/contacto">
-                    <img src={email} alt="email logo" />
-                </Link>
+                <img src={email} alt="email logo" onClick={handleOpen} />
+
                 <a
                     href="https://github.com/Galleguras"
                     target="_blank"
@@ -109,6 +136,23 @@ const Navbar = ({ isScrolling, uri }) => {
                     <img src={linkedin} alt="linkedin logo" />
                 </a>
             </IconBar>
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition={true}
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500
+                }}
+            >
+                <Fade in={open}>
+                    <Box sx={style}>
+                        <Contact handleClose={handleClose} />
+                    </Box>
+                </Fade>
+            </Modal>
         </NavBar>
     )
 }
