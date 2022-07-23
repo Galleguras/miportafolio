@@ -24,5 +24,20 @@
     "España (Granada) Av. del Conocimiento, 41, 18016": "Spain (Granada) Av. del Conocimiento, 41, 18016",
     "Contacta conmigo": "Contact me",
     "Y pongámonos manos a la obra": "And let's get down to work",
-    "Diseñado por Pablo Gallego Carmona": "Design By Pablo Gallego Carmona"
+    "Diseñado por Pablo Gallego Carmona": "Design By Pablo Gallego Carmona",
+
+    "Formulario de Conacto": "Contact Form",
+    "Nombre": "Fist Name",
+    "Apellidos": "Surname",
+    "Telefono": "Phone",
+    "Mail": "Mail",
+    "Mensaje": "Message",
+    "Enviar": "Send",
+    "El nombre es obligatorio": "Name is required",
+    "El apellido es obligatorio": "Surname is required",
+    "El telefono es obligatorio": "Phone is required",
+    "Debe ser numerico": "Must be a number",
+    "El email es obligatorio": "Mail is required",
+    "El mensaje es demasiado corto": "El mensaje es demasiado corto",
+    "El message es obligatorio": "The message is too short"
 }

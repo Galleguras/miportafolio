@@ -10,7 +10,7 @@ import Modal from '@mui/material/Modal'
 import Backdrop from '@mui/material/Backdrop'
 import Box from '@mui/material/Box'
 import Contact from '../contact/Contact'
-
+import TextField from '@mui/material/TextField'
 import Fade from '@mui/material/Fade'
 
 import Typography from '@mui/material/Typography'
@@ -111,7 +111,12 @@ const Navbar = ({ isScrolling, uri }) => {
         <NavBar scrolling={isScrolling} uri={uri}>
             <NavBarLogo scrolling={isScrolling} uri={uri} onClick={toTheTop}>
                 Pablo Gallego Carmona
-            </NavBarLogo>
+            </NavBarLogo>{' '}
+            <TextField
+                id="outlined-basic"
+                label="Outlined"
+                variant="outlined"
+            />
             <LanguageSelector />
             <IconBar>
                 <img src={email} alt="email logo" onClick={handleOpen} />
@@ -136,7 +141,7 @@ const Navbar = ({ isScrolling, uri }) => {
                 aria-describedby="transition-modal-description"
                 open={open}
                 onClose={handleClose}
-                closeAfterTransition
+                closeAfterTransition={true}
                 BackdropComponent={Backdrop}
                 BackdropProps={{
                     timeout: 500
@@ -144,7 +149,7 @@ const Navbar = ({ isScrolling, uri }) => {
             >
                 <Fade in={open}>
                     <Box sx={style}>
-                        <Contact />
+                        <Contact handleClose={handleClose} />
                     </Box>
                 </Fade>
             </Modal>

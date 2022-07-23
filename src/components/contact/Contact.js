@@ -1,11 +1,20 @@
-import React, { useRef } from 'react'
-import * as yup from 'yup'
+import React, { useEffect, useRef, useState } from 'react'
+import * as Yup from 'yup'
+import { useFormik } from 'formik'
 import Typography from '@mui/material/Typography'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import styled from 'styled-components'
 import emailjs from '@emailjs/browser'
-
+import { useTranslation } from 'gatsby-plugin-react-i18next'
+import { styled as StyledMui } from '@mui/material/styles'
+import SendIcon from '@mui/icons-material/Send'
+import LoadingButton from '@mui/lab/LoadingButton'
+const ValidationTextField = StyledMui(TextField)({
+    '& label.Mui-focused': {
+        color: 'black'
+    }
+})
 const ContentForm = styled.div`
     display: flex;
     flex-direction: column;
@@ -14,11 +23,44 @@ const ContentForm = styled.div`
     align-items: stretch;
     align-content: stretch;
 `
-const Contact = () => {
+
+const Contact = ({ handleClose }) => {
+    const [loading, setLoading] = useState(false)
+
+    const { t } = useTranslation()
+    const validationSchema = Yup.object().shape({
+        nombre: Yup.string().required(t('El nombre es obligatorio')),
+        apellidos: Yup.string().required(t('El apellido es obligatorio')),
+        telefono: Yup.number(t('Debe ser numerico')).required(
+            t('El telefono es obligatorio')
+        ),
+        mail: Yup.string().email().required(t('El email es obligatorio')),
+        message: Yup.string()
+            .min(20, t('El mensaje es demasiado corto'))
+            .required(t('El message es obligatorio'))
+    })
+
+    const formik = useFormik({
+        initialValues: {
+            nombre: '',
+            apellidos: '',
+            telefono: '',
+            mail: '',
+            Mensaje: ''
+        },
+        validationSchema: validationSchema,
+        onSubmit: (values) => {
+            console.log('values', values)
+        }
+    })
+    console.log('-->', formik)
+
     const form = useRef()
     const sendEmail = (e) => {
+        setLoading(true)
         e.preventDefault()
-        debugger
+
+        console.log('fooormmm-->', formik.errors.message)
         emailjs
             .sendForm(
                 'service_dh4r8jc',
@@ -34,67 +76,118 @@ const Contact = () => {
                     console.log(error.text)
                 }
             )
+
+        setLoading(false)
+        handleClose()
     }
+
     return (
         <>
             <form ref={form} onSubmit={sendEmail}>
                 <ContentForm>
                     <Typography
                         variant="h4"
-                        component="div"
+                        component="h1"
                         display="block"
                         gutterBottom
                         align="center"
                     >
-                        Formulario de Conacto
+                        {t('Formulario de Conacto')}
                     </Typography>
-                    <TextField
+
+                    <ValidationTextField
                         id="nombre"
                         name="nombre"
-                        label="Nombre"
+                        label={`${t('Nombre')}*`}
                         variant="standard"
-                        required={true}
+                        value={formik.values.nombre}
+                        onBlur={formik.handleBlur}
+                        onChange={formik.handleChange}
+                        error={
+                            formik.touched.nombre &&
+                            Boolean(formik.errors.nombre)
+                        }
+                        helperText={
+                            formik.touched.nombre && formik.errors.nombre
+                        }
                     />
-                    <TextField
+                    <ValidationTextField
                         id="apellidos"
                         name="apellidos"
-                        label="Apellidos"
+                        label={`${t('Apellidos')}*`}
                         variant="standard"
-                        required={true}
+                        value={formik.values.apellidos}
+                        onBlur={formik.handleBlur}
+                        onChange={formik.handleChange}
+                        error={
+                            formik.touched.apellidos &&
+                            Boolean(formik.errors.apellidos)
+                        }
+                        helperText={
+                            formik.touched.apellidos && formik.errors.apellidos
+                        }
                     />
-                    <TextField
+                    <ValidationTextField
                         id="telefono"
                         name="telefono"
-                        label="Telefono"
+                        label={`${t('Telefono')}*`}
                         variant="standard"
-                        required={true}
+                        value={formik.values.telefono}
+                        onBlur={formik.handleBlur}
+                        onChange={formik.handleChange}
+                        error={
+                            formik.touched.telefono &&
+                            Boolean(formik.errors.telefono)
+                        }
+                        helperText={
+                            formik.touched.telefono && formik.errors.telefono
+                        }
                     />
-                    <TextField
+                    <ValidationTextField
                         id="mail"
                         name="mail"
-                        label="Correo Electronico"
+                        label={`${t('Mail')}*`}
                         variant="standard"
-                        required={true}
+                        value={formik.values.mail}
+                        onBlur={formik.handleBlur}
+                        onChange={formik.handleChange}
+                        error={
+                            formik.touched.mail && Boolean(formik.errors.mail)
+                        }
+                        helperText={formik.touched.mail && formik.errors.mail}
                     />
-                    <TextField
+                    <ValidationTextField
                         id="message"
                         name="message"
-                        label="Escriba aqui..."
+                        label={`${t('Mensaje')}*`}
                         multiline
                         rows={4}
-                        defaultValue=""
                         variant="standard"
-                        required={true}
-                        error={false}
+                        value={formik.values.message}
+                        onBlur={formik.handleBlur}
+                        onChange={formik.handleChange}
+                        error={
+                            formik.touched.message &&
+                            Boolean(formik.errors.message)
+                        }
+                        helperText={
+                            formik.touched.message && formik.errors.message
+                        }
                     />
                     <br />
-                    <Button type="submit" variant="contained">
-                        Enviar
-                    </Button>
+
+                    <LoadingButton
+                        disabled={formik.errors.message}
+                        size="small"
+                        loading={loading}
+                        variant="standard"
+                        type="submit"
+                    >
+                        {t('Enviar')}
+                    </LoadingButton>
                 </ContentForm>
             </form>
         </>
     )
 }
-
 export default Contact

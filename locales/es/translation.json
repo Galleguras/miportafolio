@@ -25,5 +25,19 @@
     "Contacta conmigo": "Contacta conmigo",
     "Y pongámonos manos a la obra": "Y pongámonos manos a la obra",
     "Diseñado por Pablo Gallego Carmona": "Diseñado por Pablo Gallego Carmona",
-    "": ""
+
+    "Formulario de Conacto": "Formulario de Conacto",
+    "Nombre": "Nombre",
+    "Apellidos": "Apellidos",
+    "Telefono": "Telefono",
+    "Mail": "Email",
+    "Mensaje": "Mensaje",
+    "Enviar": "Enviar",
+    "El nombre es obligatorio": "El nombre es obligatorio",
+    "El apellido es obligatorio": "El apellido es obligatorio",
+    "El telefono es obligatorio": "El telefono es obligatorio",
+    "Debe ser numerico": "Debe ser numerico",
+    "El email es obligatorio": "El email es obligatorio",
+    "El mensaje es demasiado corto": "El mensaje es demasiado corto",
+    "El message es obligatorio": "El message es obligatorio"
 }
