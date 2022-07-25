@@ -106,6 +106,7 @@ const Footer = () => {
                                 width: '100px',
                                 padding: '10px'
                             }}
+                            alt="Donate"
                         />
                     </a>
                 </FooterSns>

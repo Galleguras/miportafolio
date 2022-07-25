@@ -21,6 +21,9 @@ const CarouselContainer = styled.div`
         ${device.mobile`  `}
         ${device.tablet``}
     }
+    .BrainhubCarousel__trackContainer {
+        touch-action: pan-y;
+    }
 `
 const CarouselTitle = styled.div`
     color: white;
@@ -51,6 +54,7 @@ const Slider = () => {
             <CarouselTitle>
                 <h2>{t('Mis Proyectos')}</h2>
             </CarouselTitle>
+
             <Carousel
                 value={value}
                 infinite

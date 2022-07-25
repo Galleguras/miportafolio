@@ -1,8 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { device } from '../../styles/responsive'
 import { Link } from 'gatsby'
 import { useI18next } from 'gatsby-plugin-react-i18next'
+import React from 'react'
+import styled from 'styled-components'
 const SlideContainer = styled(Link)`
     height: 400px;
     width: 400px;

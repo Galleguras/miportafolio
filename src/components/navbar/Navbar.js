@@ -1,19 +1,15 @@
-import { Link } from 'gatsby'
+import Backdrop from '@mui/material/Backdrop'
+import Box from '@mui/material/Box'
+import Fade from '@mui/material/Fade'
+import Modal from '@mui/material/Modal'
 import React from 'react'
 import styled from 'styled-components'
 import email from '../../media/email.png'
 import logo from '../../media/githubIcon.ico'
 import linkedin from '../../media/linkedinx.png'
 import { device } from '../../styles/responsive'
-import LanguageSelector from './LanguageSelector'
-import Modal from '@mui/material/Modal'
-import Backdrop from '@mui/material/Backdrop'
-import Box from '@mui/material/Box'
 import Contact from '../contact/Contact'
-import TextField from '@mui/material/TextField'
-import Fade from '@mui/material/Fade'
-
-import Typography from '@mui/material/Typography'
+import LanguageSelector from './LanguageSelector'
 
 const style = {
     position: 'absolute',
@@ -111,27 +107,28 @@ const Navbar = ({ isScrolling, uri }) => {
         <NavBar scrolling={isScrolling} uri={uri}>
             <NavBarLogo scrolling={isScrolling} uri={uri} onClick={toTheTop}>
                 Pablo Gallego Carmona
-            </NavBarLogo>{' '}
-            <TextField
-                id="outlined-basic"
-                label="Outlined"
-                variant="outlined"
-            />
+            </NavBarLogo>
             <LanguageSelector />
             <IconBar>
-                <img src={email} alt="email logo" onClick={handleOpen} />
+                <img
+                    role="presentation"
+                    src={email}
+                    alt="email logo"
+                    onClick={handleOpen}
+                />
 
                 <a
+                    role="button"
                     href="https://github.com/Galleguras"
-                    target="_blank"
-                    rel="norefferer"
+                    target="_blan  k"
+                    rel="noopener noreferrer"
                 >
                     <img src={logo} alt="github logo" />
                 </a>
                 <a
                     href="https://es.linkedin.com/in/pablo-gallego-carmona-327847a9"
                     target="_blank"
-                    rel="norefferer"
+                    rel="noopener noreferrer"
                 >
                     <img src={linkedin} alt="linkedin logo" />
                 </a>
