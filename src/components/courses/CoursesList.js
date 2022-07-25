@@ -45,8 +45,8 @@ const CoursesList = () => {
             }
         }
     `
-    console.clear()
-    console.log('query-->', query)
+    /*     console.clear()
+    console.log('query-->', query) */
     const { formacion } = useStaticQuery(query)
 
     return (

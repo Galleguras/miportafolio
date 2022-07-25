@@ -37,8 +37,8 @@ import './src/styles/global.css'
 export const onRouteUpdate = ({ location, prevLocation }) => {
     const { pathname } = location
 
-    console.log('pathname-->', pathname)
-    console.log('prevLocation-->', prevLocation)
+    /*  console.log('pathname-->', pathname)
+    console.log('prevLocation-->', prevLocation) */
     if (
         prevLocation?.pathname !== '/es/' &&
         prevLocation?.pathname !== '/' &&

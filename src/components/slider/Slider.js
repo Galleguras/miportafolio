@@ -38,7 +38,7 @@ const Slider = () => {
     const slidesInfo = useTrabajo()
     const { language } = useLocationContext()
     const { t } = useTranslation()
-    console.log('slidesInfo-->', slidesInfo)
+    /*     console.log('slidesInfo-->', slidesInfo) */
     const [value, setValue] = useState(0)
     function onChange(value) {
         setValue(value)
@@ -47,7 +47,7 @@ const Slider = () => {
     const slidesInfoFiltrado = slidesInfo.filter((item) => {
         if (item.locale === language) return item
     })
-    console.log('slidesInfoFiltrado-->', slidesInfoFiltrado)
+    /*     console.log('slidesInfoFiltrado-->', slidesInfoFiltrado) */
 
     return (
         <CarouselContainer id="SlideContainerCarousel">

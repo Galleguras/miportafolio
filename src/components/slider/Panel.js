@@ -44,7 +44,7 @@ const SlideContainer = styled(Link)`
 `
 
 const Panel = ({ info }) => {
-    console.log('info-->>', info)
+    /*     console.log('info-->>', info) */
     const { language } = useI18next()
     return (
         <SlideContainer

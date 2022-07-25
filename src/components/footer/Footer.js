@@ -1,12 +1,15 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import { styled as styledMui } from '@mui/material/styles'
 import { device } from '../../styles/responsive'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import WhatsApp from '../../media/WhatsApp.png'
 import Donate from '../../media/donate.png'
 import Map from '../map/Map'
-
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
+import { grey } from '@mui/material/colors'
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 const Foter = styled.footer`
     width: 100%;
     height: 100vh;
@@ -89,11 +92,13 @@ const Footer = () => {
                 <FooterSns>
                     <DesignBy>
                         {t('Diseñado por Pablo Gallego Carmona')}
-                        <p>
+                        <Tooltip title={t('Descarga el código de GitHub')}>
                             <a href="https://github.com/Galleguras/miportafolio/tree/master">
-                                Descargar Proyecto
+                                <CloudDownloadIcon
+                                    sx={{ color: grey[50], margin: '1px 5px' }}
+                                />
                             </a>
-                        </p>
+                        </Tooltip>
                     </DesignBy>
 
                     <a href="https://www.paypal.com/donate/?hosted_button_id=EMX9TV2ZRCGZQ">

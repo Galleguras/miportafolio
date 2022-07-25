@@ -48,17 +48,16 @@ const Contact = ({ handleClose }) => {
         },
         validationSchema: validationSchema,
         onSubmit: (values) => {
-            console.log('values', values)
+            /*   console.log('values', values) */
         }
     })
-    console.log('-->', formik)
+    /*   console.log('-->', formik) */
 
     const form = useRef()
     const sendEmail = (e) => {
         setLoading(true)
         e.preventDefault()
 
-        console.log('fooormmm-->', formik.errors.message)
         emailjs
             .sendForm(
                 'service_dh4r8jc',

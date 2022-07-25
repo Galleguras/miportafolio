@@ -39,5 +39,6 @@
     "Debe ser numerico": "Must be a number",
     "El email es obligatorio": "Mail is required",
     "El mensaje es demasiado corto": "El mensaje es demasiado corto",
-    "El message es obligatorio": "The message is too short"
+    "El message es obligatorio": "The message is too short",
+    "Descarga el codigo de GitHub": "Download the code from GitHub"
 }
