@@ -2,6 +2,17 @@
 
 ## PORTAFOLIO REACT USANDO EL STARTER DE GATSBY
 
+**Principales caracteriticas del proyecto:**
+
+1.  **`Este proyecto de ha creado partiendo del starter por defecto de Gatsby`**: npm init gatsby
+2.  Para la maquetacion y estilos del mismo usamos la libreria de Styled Components: https://styled-components.com/docs
+3.  Para el Carousel hemos ulilizado @brainhubeu/react-carousel": https://www.npmjs.com/package/@brainhubeu/react-carousel
+4.  I18next : Framework de internalización escrito en y para JavaScript.
+5.  Yup y formik para la validaciones del formulario.
+6.  DatoCMS para crear contenido en línea (para poder probar la aplicacion sera necesario crear un nuevo proyecto e introducir toda la informacion).
+7.  GraphQL lenguaje de consulta para API: https://graphql.org/
+8.  MUI como biblioteca de componentes: https://mui.com/
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
