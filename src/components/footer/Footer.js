@@ -38,7 +38,6 @@ const FooterInfo = styled.div`
 const FooterContact = styled.div`
     font-size: 22px;
 
-    width: 70%;
     margin: 0 auto;
     img {
         width: 25px;
@@ -61,7 +60,10 @@ const DesignBy = styled.div`
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 20px 0;
+    padding: 0px 0;
+    a {
+        vertical-align: middle;
+    }
 `
 
 const Footer = () => {
