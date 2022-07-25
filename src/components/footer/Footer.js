@@ -20,7 +20,7 @@ const Foter = styled.footer`
 `
 
 const FooterInfo = styled.div`
-    font-size: 15px;
+    font-size: 10px;
     padding: 150px 0 30px 50px;
     width: 70%;
     margin: 0 auto;
@@ -76,7 +76,7 @@ const Footer = () => {
             </FooterInfo>
             <FooterContact>
                 <h3>{t('Contacta conmigo')} :</h3>
-                <p style={{ fontWeight: 'bold', fontSize: 'x-large' }}>
+                <p style={{ fontWeight: 'bold' }}>
                     +34 607 42 56 19
                     <a href={sendwatsAppMsg}>
                         <img src={WhatsApp} alt="Chat WhatsApp" />
@@ -85,20 +85,17 @@ const Footer = () => {
                 <a href={mailtoHref} style={{ textDecoration: 'none' }}>
                     <p>pablogallegocarmona@gmail.com</p>
                 </a>
-                {/*     <p
-                    style={{
-                        fontWeight: 'bold',
-                        fontSize: 'x-large',
-                        marginTop: '50px'
-                    }}
-                >
-                    " {t('Y pongámonos manos a la obra')} "
-                </p> */}
 
                 <FooterSns>
                     <DesignBy>
                         {t('Diseñado por Pablo Gallego Carmona')}
+                        <p>
+                            <a href="https://github.com/Galleguras/miportafolio/tree/master">
+                                Descargar Proyecto
+                            </a>
+                        </p>
                     </DesignBy>
+
                     <a href="https://www.paypal.com/donate/?hosted_button_id=EMX9TV2ZRCGZQ">
                         <img
                             src={Donate}
