@@ -4,7 +4,7 @@
 
 **Principales caracteriticas del proyecto:**
 
-1.  **`Este proyecto de ha creado partiendo del starter por defecto de Gatsby`**: npm init gatsby
+1.  **`Este proyecto se ha creado partiendo del starter por defecto de Gatsby`**: npm init gatsby
 2.  Para la maquetacion y estilos del mismo usamos la libreria de Styled Components: https://styled-components.com/docs
 3.  Para el Carousel hemos ulilizado @brainhubeu/react-carousel": https://www.npmjs.com/package/@brainhubeu/react-carousel
 4.  I18next : Framework de internalización escrito en y para JavaScript.
