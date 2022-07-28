@@ -9,6 +9,15 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: 'gatsby-plugin-purgecss',
+            options: {
+                ignore: [
+                    '/node_modules/slick-carousel/slick/slick.css',
+                    '/node_modules/slick-carousel/slick/slick-theme.css'
+                ]
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/locales`,

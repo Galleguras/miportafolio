@@ -11,7 +11,7 @@ import Slider from '../components/slider/Slider'
 import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
 import Layout from '../components/Layout/Layout'
-
+import Slick from '../components/carousel/Slick'
 const theme = createTheme({
     palette: {
         primary: {
@@ -76,15 +76,7 @@ const IndexPage = () => {
                     <meta property="og:type" content="article" />
                     <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
                 </Helmet>
-                <Layout>
-                    {/* <Navbar isScrolling={scrollHeight} /> */}
-                    <Cover />
-                    <Courses />
-                    <About />
-                    <Slider />
-                    <Info />
-                    <Footer />
-                </Layout>
+                <Slick />
             </ThemeProvider>
         </LocationProvider>
     )
