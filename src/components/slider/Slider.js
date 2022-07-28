@@ -56,6 +56,10 @@ const Slider = () => {
             </CarouselTitle>
 
             <Carousel
+                autoPlay={3000}
+                stopAutoPlayOnHover
+                animationSpeed={1500}
+                offset={10}
                 value={value}
                 infinite
                 slidesPerPage={3}

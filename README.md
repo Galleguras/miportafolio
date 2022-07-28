@@ -6,7 +6,7 @@
 
 1.  **`Este proyecto se ha creado partiendo del starter por defecto de Gatsby`**: npm init gatsby
 2.  Para la maquetacion y estilos del mismo usamos la libreria de Styled Components: https://styled-components.com/docs
-3.  Para el Carousel hemos ulilizado @brainhubeu/react-carousel": https://www.npmjs.com/package/@brainhubeu/react-carousel
+3.  Para el Carousel hemos ulilizado @brainhubeu/react-carousel": https://www.npmjs.com/package/@brainhubeu/react-carousel/v/1.13.39
 4.  I18next : Framework de internalización escrito en y para JavaScript.
 5.  Yup y formik para la validaciones del formulario.
 6.  DatoCMS para crear contenido en línea (para poder probar la aplicacion sera necesario crear un nuevo proyecto e introducir toda la informacion).
