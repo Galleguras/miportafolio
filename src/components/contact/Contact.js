@@ -3,6 +3,7 @@ import LoadingButton from '@mui/lab/LoadingButton'
 import { styled as StyledMui } from '@mui/material/styles'
 import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
 import { useFormik } from 'formik'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import React, { useRef, useState, useEffect } from 'react'
@@ -18,8 +19,13 @@ const ContentForm = styled.div`
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+`
+
+const ContentButtons = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 `
 
 const Contact = ({ handleClose }) => {
@@ -180,18 +186,26 @@ const Contact = ({ handleClose }) => {
                     />
                     <br />
 
-                    <LoadingButton
-                        disabled={
-                            !form.current ||
-                            Object.keys(formik.errors).length !== 0
-                        }
-                        size="small"
-                        loading={loading}
-                        variant="standard"
-                        type="submit"
-                    >
-                        {t('Enviar')}
-                    </LoadingButton>
+                    <ContentButtons>
+                        <LoadingButton
+                            disabled={
+                                !form.current ||
+                                Object.keys(formik.errors).length !== 0
+                            }
+                            size="small"
+                            loading={loading}
+                            variant="standard"
+                            type="submit"
+                        >
+                            {t('Enviar')}
+                        </LoadingButton>
+                        <Button
+                            onClick={() => handleClose()}
+                            variant="standard"
+                        >
+                            {t('Cancelar')}
+                        </Button>
+                    </ContentButtons>
                 </ContentForm>
             </form>
         </>

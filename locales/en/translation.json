@@ -33,6 +33,7 @@
     "Mail": "Mail",
     "Mensaje": "Message",
     "Enviar": "Send",
+    "Cancelar": "Cancel",
     "El nombre es obligatorio": "Name is required",
     "El apellido es obligatorio": "Surname is required",
     "El telefono es obligatorio": "Phone is required",

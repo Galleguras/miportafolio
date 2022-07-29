@@ -33,6 +33,7 @@
     "Mail": "Email",
     "Mensaje": "Mensaje",
     "Enviar": "Enviar",
+    "Cancelar": "Cancelar",
     "El nombre es obligatorio": "El nombre es obligatorio",
     "El apellido es obligatorio": "El apellido es obligatorio",
     "El telefono es obligatorio": "El telefono es obligatorio",
