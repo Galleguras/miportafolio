@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
 import { useFormik } from 'formik'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import styled from 'styled-components'
 import * as Yup from 'yup'
 const ValidationTextField = StyledMui(TextField)({
@@ -24,6 +24,7 @@ const ContentForm = styled.div`
 
 const Contact = ({ handleClose }) => {
     const [loading, setLoading] = useState(false)
+    const [open, setOpen] = useState(0)
 
     const { t } = useTranslation()
     const validationSchema = Yup.object().shape({
@@ -35,6 +36,7 @@ const Contact = ({ handleClose }) => {
         mail: Yup.string().email().required(t('El email es obligatorio')),
         message: Yup.string()
             .min(20, t('El mensaje es demasiado corto'))
+            .max(200, t('El mensaje es demasiado largo'))
             .required(t('El message es obligatorio'))
     })
 
@@ -51,9 +53,10 @@ const Contact = ({ handleClose }) => {
             /*   console.log('values', values) */
         }
     })
-    /*   console.log('-->', formik) */
+    console.log('formikkk-->', formik)
 
     const form = useRef()
+    console.log('xxx->', form)
     const sendEmail = (e) => {
         setLoading(true)
         e.preventDefault()
@@ -169,12 +172,19 @@ const Contact = ({ handleClose }) => {
                         }
                         helperText={
                             formik.touched.message && formik.errors.message
+                                ? `${formik.errors.message} [${formik.values.message?.length}-200]`
+                                : formik.values.message
+                                ? ` [${formik.values.message?.length}-200]`
+                                : `[0-200]`
                         }
                     />
                     <br />
 
                     <LoadingButton
-                        disabled={formik.errors.message}
+                        disabled={
+                            !form.current ||
+                            Object.keys(formik.errors).length !== 0
+                        }
                         size="small"
                         loading={loading}
                         variant="standard"

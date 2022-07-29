@@ -38,7 +38,8 @@
     "El telefono es obligatorio": "Phone is required",
     "Debe ser numerico": "Must be a number",
     "El email es obligatorio": "Mail is required",
-    "El mensaje es demasiado corto": "El mensaje es demasiado corto",
-    "El message es obligatorio": "The message is too short",
+    "El mensaje es demasiado corto": "Message is too short",
+    "El mensaje es demasiado largo": "Message is too long",
+    "El message es obligatorio": "The message is required",
     "Descarga el codigo de GitHub": "Download the code from GitHub"
 }
