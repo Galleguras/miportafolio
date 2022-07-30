@@ -104,7 +104,9 @@ const IconBar = styled.div`
         &:hover {
             transform: scale(1.2, 1.2);
         }
+        ${device.mobile` font-size: 40px;`}
     }
+    ${device.mobile` padding-right: 0px;`}
 `
 const Navbar = ({ isScrolling, uri }) => {
     const toTheTop = () => {

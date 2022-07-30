@@ -38,6 +38,8 @@ const Contenido = styled.div`
             ${device.tablet`   width: 250px `};
         }
     }
+    ${device.mobile` height: calc(100vh - 166px);
+`};
 `
 
 const BotonVolver = styled(Link)`
