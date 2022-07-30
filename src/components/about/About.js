@@ -16,9 +16,16 @@ const AboutContainer = styled.div`
     ${device.pc`height: 60vh;`}
 `
 const AboutDesc = styled.div`
-    padding: 0px 80px;
-    justify-content: center;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+
+    div {
+        justify-content: center;
+        align-self: center;
+        overflow-y: auto;
+        height: -webkit-fill-available;
+    }
     h3 {
         margin-bottom: 30px;
         font-size: 28px;
@@ -43,11 +50,13 @@ const About = () => {
         <AboutContainer>
             <AboutDesc>
                 <h3> {t('Déjame contarte algo sobre mí')}... </h3>
-                <p>{t('p1')}</p>
-                <p>{t('p2')}</p>
-                <p>{t('p3')}</p>
-                <p>{t('p4')}</p>
-                <p>{t('p5')}</p>
+                <div>
+                    <p>{t('p1')}</p>
+                    <p>{t('p2')}</p>
+                    <p>{t('p3')}</p>
+                    <p>{t('p4')}</p>
+                    <p>{t('p5')}</p>
+                </div>
             </AboutDesc>
             <AboutImg src={MiFoto} />
         </AboutContainer>

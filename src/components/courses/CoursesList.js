@@ -29,7 +29,7 @@ const CoursesList = () => {
             formacion: allDatoCmsFormacion {
                 nodes {
                     descripcion
-                    fechaRealizacion(formatString: "DD MMMM, YYYY")
+                    fechaRealizacion(formatString: "DD-MM-YYYY")
                     horas
                     imagen {
                         fluid {

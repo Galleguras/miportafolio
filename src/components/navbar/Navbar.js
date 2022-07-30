@@ -10,7 +10,10 @@ import linkedin from '../../media/linkedinx.png'
 import { device } from '../../styles/responsive'
 import Contact from '../contact/Contact'
 import LanguageSelector from './LanguageSelector'
-
+import GitHubIcon from '@mui/icons-material/GitHub'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import Link from '@mui/material/Link'
 const style = {
     position: 'absolute',
     top: '50%',
@@ -83,7 +86,7 @@ const IconBar = styled.div`
     a:first-child {
         padding-right: 5px;
     }
-    img {
+    /*     img {
         transition: all 0.5s ease;
         &:hover {
             transform: scale(1.2, 1.2);
@@ -92,6 +95,15 @@ const IconBar = styled.div`
             transform: scale(1.2, 1.2);
         }
         ${device.mobile`height: 40px;`}
+    } */
+    svg {
+        color: white;
+        font-size: 55px;
+        padding: 5px 2px;
+        transition: all 0.5s ease;
+        &:hover {
+            transform: scale(1.2, 1.2);
+        }
     }
 `
 const Navbar = ({ isScrolling, uri }) => {
@@ -110,6 +122,14 @@ const Navbar = ({ isScrolling, uri }) => {
             </NavBarLogo>
             <LanguageSelector />
             <IconBar>
+                <MailOutlineIcon onClick={handleOpen} />
+                <Link href="https://github.com/Galleguras">
+                    <GitHubIcon />
+                </Link>
+                <Link href="https://es.linkedin.com/in/pablo-gallego-carmona-327847a9">
+                    <LinkedInIcon />
+                </Link>
+                {/* 
                 <img
                     role="presentation"
                     src={email}
@@ -120,7 +140,7 @@ const Navbar = ({ isScrolling, uri }) => {
                 <a
                     role="button"
                     href="https://github.com/Galleguras"
-                    target="_blan  k"
+                    target="_blank"
                     rel="noopener noreferrer"
                 >
                     <img src={logo} alt="github logo" />
@@ -131,7 +151,7 @@ const Navbar = ({ isScrolling, uri }) => {
                     rel="noopener noreferrer"
                 >
                     <img src={linkedin} alt="linkedin logo" />
-                </a>
+                </a> */}
             </IconBar>
             <Modal
                 aria-labelledby="transition-modal-title"

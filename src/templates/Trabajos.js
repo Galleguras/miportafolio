@@ -9,29 +9,28 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import IconButton from '@mui/material/IconButton'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 const Contenido = styled.div`
-    border: 3px solid black;
+    position: fixed;
+    height: calc(100vh - 66px);
+
     display: flex;
+    flex-direction: column;
+    margin-top: 66px;
 
-    ${device.mobile`flex-direction: row; margin-top: 120px`};
-    ${device.tablet`flex-direction: row; margin-top: 120px`};
-    ${device.pc`flex-direction: row; margin: 120px 120px 5px 120px`};
-
+    h2:first-child {
+        font-weight: bold;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+    }
     > div {
-        //overflow-y: scroll;
+        height: 100%;
+        overflow-y: scroll;
         ${device.mobile`padding: 10px;`};
         ${device.tablet` padding: 20px;   `};
         ${device.pc` padding: 20px;    `};
 
-        > h2 {
-            font-weight: bold;
-        }
-        h2:first-child {
-            padding: 5px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: xx-large;
-        }
         img {
             width: 300px;
             float: right;
@@ -63,13 +62,10 @@ const Trabajos = ({ data, pageContext, uri }) => {
         <>
             <Layout uri={uri}>
                 <Contenido>
-                    {/* */}
-                    {/*  <div>asd</div> */}
+                    <h2>{`${fechaInicio} - ${
+                        fechaFin ? fechaFin : t('Actualidad')
+                    }`}</h2>
                     <div>
-                        <h2>{`${fechaInicio} - ${
-                            fechaFin ? fechaFin : t('Actualidad')
-                        }`}</h2>
-
                         <img src={imagen.fluid.srcSet} alt={imagen.filename} />
                         <h2>{t('Empresa')}:</h2>
                         <p>{empresa}</p>
@@ -82,14 +78,12 @@ const Trabajos = ({ data, pageContext, uri }) => {
                         <h2>{t('Herramientas/Tecnologías')}:</h2>
                         <p>{eht}</p>
                     </div>
+                    <BotonVolver to={language === 'es' ? '/es/' : '/'}>
+                        <IconButton sx={{ color: 'black' }}>
+                            <ArrowBackIcon fontSize="large" />
+                        </IconButton>
+                    </BotonVolver>
                 </Contenido>
-                {/*     <div>Volver</div> */}
-
-                <BotonVolver to={language === 'es' ? '/es/' : '/'}>
-                    <IconButton sx={{ color: 'black' }}>
-                        <ArrowBackIcon fontSize="large" />
-                    </IconButton>
-                </BotonVolver>
             </Layout>
         </>
     )
