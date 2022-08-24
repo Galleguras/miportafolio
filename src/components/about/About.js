@@ -9,7 +9,7 @@ const AboutContainer = styled.div`
 
     height: 60vh;
 
-    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 
     ${device.mobile`flex-direction: column; height: auto !important `}
     ${device.tablet`flex-direction: column; height: auto !important `} 

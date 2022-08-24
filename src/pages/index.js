@@ -79,8 +79,8 @@ const IndexPage = () => {
                 <Layout>
                     {/* <Navbar isScrolling={scrollHeight} /> */}
                     <Cover />
-                    <Courses />
                     <About />
+                    <Courses />
                     <Slider />
                     <Info />
                     <Footer />

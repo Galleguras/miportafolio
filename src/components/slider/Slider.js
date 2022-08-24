@@ -10,12 +10,14 @@ import useTrabajo from '../hooks/useTrabajo'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 const CarouselContainer = styled.div`
     display: flex;
+
     vertical-align: center;
     align-items: center;
     background-color: black;
     padding: 30px 0 30px 0;
     ${device.mobile`flex-direction: column;`}
     ${device.tablet`flex-direction: column;`}
+      ${device.pc`flex-direction: row-reverse;`}
     li {
         margin: 5px !important;
         ${device.mobile`  `}
