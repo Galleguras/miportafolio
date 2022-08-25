@@ -86,6 +86,8 @@ const IndexPage = () => {
                         itemprop="image"
                         content={MiFoto}
                     />
+                    <meta property="og:image:width" content="30" />
+                    <meta property="og:image:height" content="30" />
 
                     <meta
                         property="og:site_name"
