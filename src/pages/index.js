@@ -12,7 +12,7 @@ import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
 import Layout from '../components/Layout/Layout'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import MiFoto from '../media/yo.jpg'
+import MiFoto from '../media/yo.png'
 const theme = createTheme({
     palette: {
         primary: {
