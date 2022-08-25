@@ -12,6 +12,7 @@ import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
 import Layout from '../components/Layout/Layout'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
+import MiFoto from '../media/yo.jpg'
 const theme = createTheme({
     palette: {
         primary: {
@@ -83,10 +84,7 @@ const IndexPage = () => {
                         content="https://pablogallegocarmona.xyz/"
                     />
 
-                    <meta
-                        property="og:image"
-                        content="https://pablogallegocarmona.xyz/static/yo-7d1f139c3a408b370249b2309b28b41e.jpg"
-                    />
+                    <meta property="og:image" content={MiFoto} />
 
                     <meta
                         property="og:site_name"
