@@ -74,17 +74,15 @@ const IndexPage = () => {
                     <meta property="og:title" content={t('Portafolo Pablo')} />
                     <meta
                         property="og:description"
-                        content={t('Portafolo Pablo')}
+                        content={t(
+                            'Mi portafolio virtual desarrollado con Gatsby'
+                        )}
                     />
                     <meta
                         property="og:url"
                         content="https://pablogallegocarmona.xyz/"
                     />
 
-                    <meta
-                        property="og:image"
-                        content="https://s3.amazonaws.com/gndx.dev/gndxdev.png"
-                    />
                     <meta
                         property="og:image"
                         content="https://pablogallegocarmona.xyz/static/yo-7d1f139c3a408b370249b2309b28b41e.jpg"
