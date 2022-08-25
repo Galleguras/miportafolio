@@ -81,7 +81,11 @@ const IndexPage = () => {
                         content="https://pablogallegocarmona.xyz/"
                     />
 
-                    <meta property="og:image" content={MiFoto} />
+                    <meta
+                        property="og:image"
+                        itemprop="image"
+                        content={MiFoto}
+                    />
 
                     <meta
                         property="og:site_name"
