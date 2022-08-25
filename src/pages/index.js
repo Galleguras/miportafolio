@@ -11,7 +11,7 @@ import Slider from '../components/slider/Slider'
 import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
 import Layout from '../components/Layout/Layout'
-
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 const theme = createTheme({
     palette: {
         primary: {
@@ -37,44 +37,65 @@ const IndexPage = () => {
                  window.scrollTo(0, 0) 
     }, []) */
 
+    const { t } = useTranslation()
+
     return (
         <LocationProvider>
             <ThemeProvider theme={theme}>
                 <Helmet>
-                    <title>Portafolio Pablo</title>
+                    <title>{t('Portafolo Pablo')}</title>
                     <link
                         rel="icon"
                         type="image/png"
                         href={favicon}
                         sizes="16x16"
                     />
-
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@TU_USER" />
-                    <meta name="twitter:creator" content="@TU_USER" />
+                    {/* twitter */}
+                    {/* <meta name="twitter:card" content="summary_large_image" /> */}
+                    <meta name="twitter:site" content="@pablogallegoca2" />
+                    <meta name="twitter:creator" content="@pablogallegoca2" />
                     <meta name="twitter:title" content="Portafolio Pablo" />
                     <meta
                         name="twitter:description"
-                        content="Portafolio Pablo"
+                        content={t('Portafolo Pablo')}
                     />
                     <meta
                         name="twitter:image"
-                        content="https://s3.amazonaws.com/gndx.dev/gndxdev.png"
+                        content="https://twitter.com/pablogallegoca2/photo"
                     />
-                    <meta property="og:title" content="Portafolio Pablo" />
+
+                    <meta
+                        name="description"
+                        content={t(
+                            'Mi portafolio virtual desarrollado con Gatsby'
+                        )}
+                    />
+
+                    <meta property="og:title" content={t('Portafolo Pablo')} />
                     <meta
                         property="og:description"
-                        content="Portafolio Pablo"
+                        content={t('Portafolo Pablo')}
                     />
+                    <meta
+                        property="og:url"
+                        content="https://pablogallegocarmona.xyz/"
+                    />
+
                     <meta
                         property="og:image"
                         content="https://s3.amazonaws.com/gndx.dev/gndxdev.png"
                     />
-                    <meta property="og:url" content="pablogallegocarmona.xyz" />
-                    <meta property="og:site_name" content="Portafolio Pablo" />
+                    <meta
+                        property="og:image"
+                        content="https://pablogallegocarmona.xyz/static/yo-7d1f139c3a408b370249b2309b28b41e.jpg"
+                    />
+
+                    <meta
+                        property="og:site_name"
+                        content={t('Portafolo Pablo')}
+                    />
                     <meta property="og:locale" content="es_ES" />
                     <meta property="og:type" content="article" />
-                    <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
                 </Helmet>
                 <Layout>
                     {/* <Navbar isScrolling={scrollHeight} /> */}
