@@ -60,10 +60,7 @@ const IndexPage = () => {
                         name="twitter:description"
                         content={t('Portafolo Pablo')}
                     />
-                    <meta
-                        name="twitter:image"
-                        content="https://twitter.com/pablogallegoca2/photo"
-                    />
+                    <meta name="twitter:image" content={MiFoto} />
 
                     <meta
                         name="description"
