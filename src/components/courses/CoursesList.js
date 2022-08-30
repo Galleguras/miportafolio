@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import { useLocationContext } from '../../context/LocationProvider'
-
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 const BorderedAvatar = styled(Avatar)`
     border: 2px solid black;
 `
@@ -48,7 +48,7 @@ const CoursesList = () => {
     /*     console.clear()
     console.log('query-->', query) */
     const { formacion } = useStaticQuery(query)
-
+    const { t } = useTranslation()
     return (
         <>
             <List
@@ -98,7 +98,9 @@ const CoursesList = () => {
                                                 variant="body2"
                                                 color="text.primary"
                                             >
-                                                {`(${curso.horas} horas) `}
+                                                {`(${curso.horas} ${t(
+                                                    'horas'
+                                                )}) `}
                                             </Typography>
                                             {curso.descripcion}
                                         </React.Fragment>
