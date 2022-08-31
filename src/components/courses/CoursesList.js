@@ -12,6 +12,9 @@ import { useLocationContext } from '../../context/LocationProvider'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 const BorderedAvatar = styled(Avatar)`
     border: 2px solid black;
+    img {
+        height: fit-content;
+    }
 `
 const HtmlTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
