@@ -6,7 +6,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next'
 const InfoContainer = styled.div`
     width: 100%;
     height: 300px;
-    background-color: white;
+    background: linear-gradient(white, 85%, rgba(0, 0, 0, 0.7));
     color: black;
     margin-bottom: 100vh !important;
     ${device.pc`   

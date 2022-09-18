@@ -20,6 +20,12 @@ const Foter = styled.footer`
     z-index: -2;
     bottom: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
 `
 
 const FooterInfo = styled.div`
