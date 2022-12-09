@@ -103,7 +103,7 @@ const IndexPage = () => {
                     <Cover />
                     <About />
                     <Courses />
-                    <Slider />
+                    {/*     <Slider /> */}
                     <Info />
                     <Footer />
                 </Layout>
