@@ -1,15 +1,14 @@
 import React from 'react'
 
-import styled from 'styled-components'
-import { styled as styledMui } from '@mui/material/styles'
-import { device } from '../../styles/responsive'
-import { useTranslation } from 'gatsby-plugin-react-i18next'
-import WhatsApp from '../../media/WhatsApp.png'
-import Donate from '../../media/donate.png'
-import Map from '../map/Map'
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
 import { grey } from '@mui/material/colors'
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
+import Tooltip from '@mui/material/Tooltip'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
+import styled from 'styled-components'
+import Donate from '../../media/donate.png'
+import WhatsApp from '../../media/WhatsApp.png'
+import { device } from '../../styles/responsive'
+import Map from '../map/Map'
 const Foter = styled.footer`
     width: 100%;
     height: 100vh;

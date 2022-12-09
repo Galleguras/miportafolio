@@ -48,6 +48,7 @@ const Slider = () => {
 
     const slidesInfoFiltrado = slidesInfo.filter((item) => {
         if (item.locale === language) return item
+        else return false
     })
     /*     console.log('slidesInfoFiltrado-->', slidesInfoFiltrado) */
 
