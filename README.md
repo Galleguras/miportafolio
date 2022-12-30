@@ -12,7 +12,7 @@
 6.  DatoCMS para crear contenido en línea (para poder probar la aplicacion sera necesario crear un nuevo proyecto e introducir toda la informacion).
 7.  GraphQL lenguaje de consulta para API: https://graphql.org/
 8.  MUI como biblioteca de componentes: https://mui.com/
-9.  Integracion continua con Firebase
+9.  Integracion continua con Firebase c
 
 <p align="center">
   <a href="https://www.gatsbyjs.com">

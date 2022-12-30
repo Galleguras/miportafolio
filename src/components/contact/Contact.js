@@ -1,12 +1,12 @@
 import emailjs from '@emailjs/browser'
 import LoadingButton from '@mui/lab/LoadingButton'
+import Button from '@mui/material/Button'
 import { styled as StyledMui } from '@mui/material/styles'
 import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
 import { useFormik } from 'formik'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import * as Yup from 'yup'
 const ValidationTextField = StyledMui(TextField)({
@@ -30,7 +30,6 @@ const ContentButtons = styled.div`
 
 const Contact = ({ handleClose }) => {
     const [loading, setLoading] = useState(false)
-    const [open, setOpen] = useState(0)
 
     const { t } = useTranslation()
     const validationSchema = Yup.object().shape({
