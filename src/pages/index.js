@@ -12,46 +12,9 @@ import favicon from '../media/imgPestaña.ico'
 import LocationProvider from '../context/LocationProvider'
 import Layout from '../components/Layout/Layout'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import MiFoto from '../media/yo.png'
-export function Head() {
-    const { t } = useTranslation()
-    return (
-        <>
-            <title>{t('Portafolo Pablo')}</title>
-            <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-            {/* twitter */}
-            {/* <meta name="twitter:card" content="summary_large_image" /> */}
-            <meta name="twitter:site" content="@pablogallegoca2" />
-            <meta name="twitter:creator" content="@pablogallegoca2" />
-            <meta name="twitter:title" content="Portafolio Pablo" />
-            <meta name="twitter:description" content={t('Portafolo Pablo')} />
-            <meta name="twitter:image" content={MiFoto} />
 
-            <meta
-                name="description"
-                content="Mi portafolio virtual desarrollado con  Gatsby"
-            />
-
-            <meta property="og:title" content={t('Portafolo Pablo')} />
-            <meta
-                property="og:description"
-                content={t('Mi portafolio virtual desarrollado con Gatsby')}
-            />
-            <meta
-                property="og:url"
-                content="https://pablogallegocarmona.xyz/"
-            />
-
-            <meta property="og:image" itemprop="image" content={MiFoto} />
-            <meta property="og:image:width" content="30" />
-            <meta property="og:image:height" content="30" />
-
-            <meta property="og:site_name" content={t('Portafolo Pablo')} />
-            <meta property="og:locale" content="es_ES" />
-            <meta property="og:type" content="article" />
-        </>
-    )
-}
+import { SEO } from './../components/seo'
+export const Head = () => <SEO />
 const theme = createTheme({
     palette: {
         primary: {

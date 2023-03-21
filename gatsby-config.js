@@ -2,10 +2,11 @@ const { resolve } = require(`path`)
 const { platform } = require(`os`)
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-        author: `@gatsbyjs`,
-        siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`
+        title: `Portafolo Pablo`,
+        description: `Mi portafolio virtual desarrollado con  Gatsby.`,
+        author: `@PabloGallegoCarmona`,
+        siteUrl: `https://pablogallegocarmona.xyz/`,
+        image: `/gatsby-icon.png`
     },
     plugins: [
         {
