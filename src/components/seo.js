@@ -4,24 +4,15 @@ import MiFoto from '../media/yo.png'
 import favicon from '../media/imgPestaña.ico'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 
-export const SEO = ({
-    title,
-    description,
-    author,
-    image,
-    siteUrl,
-    pathname,
-    children
-}) => {
+export const SEO = ({ children }) => {
     const { t } = useTranslation()
-    const { title: defaultTitle, description: defaultDescription } =
-        useSiteMetadata()
+    const { title, description, author, image, siteUrl } = useSiteMetadata()
 
     const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
+        title: title,
+        description: description,
         image: `${siteUrl}${image}`,
-        url: `${siteUrl}${pathname || ``}`,
+        url: `${siteUrl}`,
         autor: `${author}`
     }
 
@@ -30,6 +21,7 @@ export const SEO = ({
             <title>{seo.title}</title>
             <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
             <meta name="description" content={seo.description} />
+
             <meta name="twitter:site" content="@pablogallegoca2" />
             <meta name="twitter:creator" content="@pablogallegoca2" />
             <meta name="twitter:title" content={seo.title} />
