@@ -29,7 +29,7 @@ export function Head() {
 
             <meta
                 name="description"
-                content={t('Mi portafolio virtual desarrollado con Gatsby')}
+                content="Mi portafolio virtual desarrollado con  Gatsby"
             />
 
             <meta property="og:title" content={t('Portafolo Pablo')} />
@@ -78,8 +78,6 @@ const IndexPage = () => {
         let x = window.history
                  window.scrollTo(0, 0) 
     }, []) */
-
-    const { t } = useTranslation()
 
     return (
         <LocationProvider>
