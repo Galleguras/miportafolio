@@ -16,7 +16,7 @@ export const SEO = ({
     const { t } = useTranslation()
     const { title: defaultTitle, description: defaultDescription } =
         useSiteMetadata()
-
+    debugger
     const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,

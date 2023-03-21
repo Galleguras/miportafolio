@@ -5,6 +5,7 @@ import { device } from '../styles/responsive'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import IconButton from '@mui/material/IconButton'
 import { Link } from 'gatsby'
+import { SEO } from './../components/seo'
 const Contenido = styled.div`
     border: 3px solid black;
     display: flex;
@@ -27,6 +28,8 @@ const BotonVolver = styled(Link)`
 const FormularioContacto = styled.div`
     border: 3px solid black;
 `
+
+export const Head = () => <SEO title="Trabajos Pablo" />
 
 const contacto = () => {
     return (
