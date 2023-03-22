@@ -1,7 +1,7 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { graphql } from 'gatsby'
 import React, { useEffect, useState } from 'react'
-/* import Helmet from 'react-helmet' */
+
 import About from '../components/about/About'
 import Courses from '../components/courses/Courses'
 import Cover from '../components/cover/Cover'
