@@ -18,8 +18,8 @@ exports.createPages = async ({ graphql, actions }) => {
                     puesto
                     eht
                     funcion
-                    fechaInicio
-                    fechaFin
+                    fechaInicio(formatString: "DD/MM/YYYY")
+                    fechaFin(formatString: "DD/MM/YYYY")
                     imagen {
                         filename
                         url
