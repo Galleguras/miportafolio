@@ -30,6 +30,8 @@ export const SEO = ({
             <title>{seo.title}</title>
             <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
             <meta name="description" content={seo.description} />
+            <meta name="thumbnail" content="/src/media/yo.png" />
+
             <meta name="twitter:site" content="@pablogallegoca2" />
             <meta name="twitter:creator" content="@pablogallegoca2" />
             <meta name="twitter:title" content={seo.title} />
