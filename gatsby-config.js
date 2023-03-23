@@ -2,8 +2,8 @@ const { resolve } = require(`path`)
 const { platform } = require(`os`)
 module.exports = {
     siteMetadata: {
-        title: `portafolio Pablo`,
-        description: `Mi portafolio virtual desarrollado con  Gatsby.`,
+        title: `Portafolio Pablo`,
+        description: `Mi portafolio virtual desarrollado con Gatsby.`,
         author: `@PabloGallegoCarmona`,
         siteUrl: `https://pablogallegocarmona.xyz/`,
         image: `/gatsby-icon.png`
