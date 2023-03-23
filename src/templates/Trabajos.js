@@ -8,6 +8,16 @@ import { device } from '../styles/responsive'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import IconButton from '@mui/material/IconButton'
 import { useI18next } from 'gatsby-plugin-react-i18next'
+
+const PreText = styled.pre`
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 1.5em; */
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    white-space: pre-wrap;
+`
 const Contenido = styled.div`
     position: fixed;
     height: calc(100vh - 66px);
@@ -60,6 +70,8 @@ const Trabajos = ({ data, pageContext, uri }) => {
         puesto,
         clientes
     } = data.allDatoCmsTrabajo.nodes[0]
+    const funcionOk = funcion.replaceAll('**', '\n')
+
     return (
         <>
             <Layout uri={uri}>
@@ -76,7 +88,7 @@ const Trabajos = ({ data, pageContext, uri }) => {
                         <h2>{t('Puesto')}:</h2>
                         <p>{puesto}</p>
                         <h2>{t('Funciones')}:</h2>
-                        <p>{funcion}</p>
+                        <PreText>{funcionOk}</PreText>
                         <h2>{t('Herramientas/Tecnologías')}:</h2>
                         <p>{eht}</p>
                     </div>
