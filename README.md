@@ -2,6 +2,8 @@
 
 ## PORTAFOLIO REACT USANDO EL STARTER DE GATSBY
 
+**Node 19.4.0**
+
 **Principales caracteriticas del proyecto:**
 
 1.  **`Este proyecto se ha creado partiendo del starter por defecto de Gatsby`**: npm init gatsby
