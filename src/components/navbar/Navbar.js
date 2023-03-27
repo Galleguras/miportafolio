@@ -84,9 +84,12 @@ const IconBar = styled.div`
     align-items: center;
     justify-content: center;
     padding-right: 20px;
-    a:first-child {
-        padding-right: 5px;
+    a:last-child {
+        scale: 1.1;
     }
+    /*    a:first-child {
+        padding-right: 5px;
+    } */
     /*     img {
         transition: all 0.5s ease;
         &:hover {
@@ -127,12 +130,14 @@ const Navbar = ({ isScrolling, uri }) => {
             <LanguageSelector />
             <IconBar>
                 <DownloadIcon />
-                <MailOutlineIcon onClick={handleOpen} />
                 <Link href="https://github.com/Galleguras">
                     <GitHubIcon />
                 </Link>
                 <Link href="https://es.linkedin.com/in/pablo-gallego-carmona-327847a9">
                     <LinkedInIcon />
+                </Link>
+                <Link>
+                    <MailOutlineIcon onClick={handleOpen} />
                 </Link>
                 {/* 
                 <img
