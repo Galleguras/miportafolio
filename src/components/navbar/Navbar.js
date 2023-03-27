@@ -14,6 +14,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import Link from '@mui/material/Link'
+import DownloadIcon from './DownloadIcon'
 const style = {
     position: 'absolute',
     top: '50%',
@@ -104,7 +105,8 @@ const IconBar = styled.div`
         &:hover {
             transform: scale(1.2, 1.2);
         }
-        ${device.mobile` font-size: 40px;`}
+        ${device.mobile` font-size: 30px;`}
+        ${device.tablet` font-size: 35px;`}
     }
     ${device.mobile` padding-right: 0px;`}
 `
@@ -124,6 +126,7 @@ const Navbar = ({ isScrolling, uri }) => {
             </NavBarLogo>
             <LanguageSelector />
             <IconBar>
+                <DownloadIcon />
                 <MailOutlineIcon onClick={handleOpen} />
                 <Link href="https://github.com/Galleguras">
                     <GitHubIcon />
