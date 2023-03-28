@@ -111,7 +111,7 @@ const IconBar = styled.div`
         ${device.mobile` font-size: 30px;`}
         ${device.tablet` font-size: 35px;`}
     }
-    ${device.mobile` padding-right: 0px;`}
+    ${device.mobile` padding-right: 10px;`}
 `
 const Navbar = ({ isScrolling, uri }) => {
     const toTheTop = () => {
