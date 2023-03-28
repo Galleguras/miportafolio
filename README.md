@@ -2,7 +2,7 @@
 
 ## PORTAFOLIO REACT USANDO EL STARTER DE GATSBY
 
-**Node 19.4.0**
+**Version de node usada para este proyecto: Node 19.4.0**
 
 **Principales caracteriticas del proyecto:**
 
