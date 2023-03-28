@@ -17,13 +17,14 @@ const AboutDesc = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
+    height: -webkit-fill-available !important;
 
     div {
         justify-content: center;
         align-self: center;
         overflow-y: auto;
         height: -webkit-fill-available !important;
-        ${device.mobile`overflow-y: hidden; `}
+        ${device.mobile`overflow-y: hidden; height: -webkit-fill-available !important; `}
     }
     h3 {
         /*    margin-bottom: 30px; */
