@@ -23,6 +23,7 @@ const AboutDesc = styled.div`
         align-self: center;
         overflow-y: auto;
         height: -webkit-fill-available !important;
+        ${device.mobile`overflow-y: hidden; `}
     }
     h3 {
         /*    margin-bottom: 30px; */
@@ -38,7 +39,7 @@ const AboutDesc = styled.div`
 `
 
 const AboutImg = styled.img`
-    ${device.mobile`height: auto;object-fit: scale-down;padding-bottom: 10px; `}
+    ${device.mobile`height: auto;object-fit: scale-down;padding-bottom: 0px; `}
     ${device.tablet`height: 500px;object-fit: scale-down;padding-bottom: 10px;`}
 `
 
