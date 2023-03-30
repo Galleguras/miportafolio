@@ -14,6 +14,7 @@ const BorderedAvatar = styled(Avatar)`
     border: 2px solid black;
     img {
         height: fit-content;
+        object-fit: contain;
     }
 `
 const HtmlTooltip = styled(({ className, ...props }) => (

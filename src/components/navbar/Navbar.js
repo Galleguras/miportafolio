@@ -45,6 +45,7 @@ const NavBar = styled.nav`
     width: 100%;
     height: 80px !important;
     font-size: 20px;
+    font-weight: bold;
     z-index: 1;
     ${(props) => {
         if (props.scrolling)
@@ -58,7 +59,7 @@ const NavBarLogo = styled.div`
     visibility: hidden;
     transition: all 1.3s ease;
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
 
     height: 80px;
     line-height: 80px;
@@ -69,8 +70,8 @@ const NavBarLogo = styled.div`
             return `opacity:1 ; visibility: visible ;
 `
     }};
-    ${device.mobile`  font-size: 0.9rem; line-height: normal; align-items: center;`}
-    ${device.tablet`  font-size: 0.9rem; line-height: normal; align-items: center;`}
+    ${device.mobile`  font-size: 0.8rem; line-height: normal; align-items: center;`}
+    ${device.tablet`  font-size: 0.8rem; line-height: normal; align-items: center;`}
     > Link {
         text-decoration: none !important;
         background-color: red;
@@ -83,7 +84,7 @@ const IconBar = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 20px;
+    padding-right: 10px;
     a:last-child {
         scale: 1.1;
     }
