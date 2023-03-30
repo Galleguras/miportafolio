@@ -29,8 +29,10 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 const CoursesList = () => {
     const { language } = useLocationContext()
     const query = graphql`
-        query {
-            formacion: allDatoCmsFormacion {
+        {
+            formacion: allDatoCmsFormacion(
+                sort: { fields: fechaRealizacion, order: DESC }
+            ) {
                 nodes {
                     descripcion
                     fechaRealizacion(formatString: "DD-MM-YYYY")
