@@ -54,7 +54,7 @@ const Panel = ({ info }) => {
                     : `trabajo/${info.slug}`
             }
         >
-            <img src={info.imagen.srcSet} alt={info.imagen.filename} />
+            <img src={info.imagen.url} alt={info.imagen.filename} />
             <div>
                 <span>{info.empresa}</span>
             </div>
