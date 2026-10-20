@@ -1,72 +1,12 @@
 const path = require('path')
+const trabajos = require('./src/data/trabajos.json')
 
-exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
-
-    const trabajosQuery = await graphql(`
-        query MyQuery {
-            allDatoCmsTrabajo(
-                filter: { locale: { eq: "es" } }
-                sort: { fields: slug }
-            ) {
-                nodes {
-                    clientes
-                    slug
-                    id
-                    locale
-                    empresa
-                    puesto
-                    eht
-                    funcion
-                    fechaInicio(formatString: "DD/MM/YYYY")
-                    fechaFin(formatString: "DD/MM/YYYY")
-                    imagen {
-                        filename
-                        url
-                        alt
-                        fluid {
-                            srcSet
-                        }
-                    }
-                }
-            }
-        }
-    `)
-
-    // Template to create dynamic pages from.
-    const trabajoTemplate = path.resolve(`src/templates/Trabajos.js`)
-
-    trabajosQuery.data.allDatoCmsTrabajo.nodes.map(
-        ({
-            slug,
-            id,
-            locale,
-            empresa,
-            puesto,
-            eht,
-            funcion,
-            fechaInicio,
-            fechaFin,
-            imagen,
-            clientes
-        }) => {
-            return createPage({
-                path: `trabajo/${slug}`,
-                component: trabajoTemplate,
-                context: {
-                    slug,
-                    id,
-                    locale,
-                    empresa,
-                    puesto,
-                    eht,
-                    funcion,
-                    fechaInicio,
-                    fechaFin,
-                    imagen,
-                    clientes
-                }
-            })
-        }
-    )
+exports.createPages = ({ actions }) => {
+    for (const trabajo of trabajos.filter(item => item.locale === 'es')) {
+        actions.createPage({
+            path: `trabajo/${trabajo.slug}`,
+            component: path.resolve('src/templates/Trabajos.js'),
+            context: { slug: trabajo.slug }
+        })
+    }
 }

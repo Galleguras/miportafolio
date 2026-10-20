@@ -66,14 +66,6 @@ module.exports = {
                 }
             }
         },
-        {
-            resolve: `gatsby-source-datocms`,
-            options: {
-                apiToken: process.env.DATOCMS_API_TOKEN,
-                preview: false,
-                disableLiveReload: false
-            }
-        },
         /*      `gatsby-plugin-react-helmet`, */
         `gatsby-plugin-image`,
         {

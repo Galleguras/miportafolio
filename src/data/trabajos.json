@@ -1,0 +1,310 @@
+[
+  {
+    "slug": "1",
+    "locale": "en",
+    "empresa": "T-SYSTEMS",
+    "fechaInicio": "2018-11-19",
+    "fechaFin": null,
+    "funcion": "**Daimler (Internacional)**\n\nMigration of a set of web applications adopting Angular and Java Microservices as new technologies. Applications used by the Mercedes Benz group within its supply and production chain. Agile work team working together with Germany.\nEnvironment / tools / technology: Angular, Java Microservices, Git, IntellJ, Scrum, Jira.\n\n**CEPSA Project:**\n\nDevelopment of an application based on React Native to computerize Cepsa car wash machines.\nEnvironment / tools / technology: React Native, Metro Blunder, Styled Components, Hooks, Mqtt, AWS,Git\n\n**TAO Project:**\n\nSmart Cities – Syrah. Smart Cities – Syrah. Development of cross-platform web applications. A city map application, so that the different municipalities could keep track of the cities by analyzing different data.\n\nEnvironment / tools / technology: React, Next js, Styled Components Grid CSS for the FrontEnd part. Elasticsearch as an analytics engine, distributed analysis and REST APIs on the BackEnd side.\n\n**Post and Telegraph:**\n\nDevelopment of web applications (Recruitment Portal and Epis Management) with responsive design for different devices. My work within the development team with Scrum methodology consisted of completing the different tickets (tasks) that we had generated within Jira. Tasks that could be both frontend and backend.\n\nEnvironment / tools / technology: React, Redux, Ant Design, Jest, Enzyme, Microservices, Java, Spring Boot, Hibernate, JPA, Maven, JUnit Test, agile Scrum work methodology, Jira, Trello. Visual Studio Code, Eclipse.\n\n**Mapfre:**\n\nDevelopment of web applications for an insurance company.\n\nEnvironment / tools / technology: Software AG WebMethods, CAF, BPM, J2EE Spring Framework, MVC, JSF, JSTL and JPA.",
+    "id": "DatoCmsTrabajo-103267411-en",
+    "eht": "React, React Native, Next JS, Gatsby,  Hooks, Redux, Ant Design, Material UI, Styled Components ,Jest, Enzyme, Microservices, Java, Spring Boot, Hibernate, JPA, Maven, JUnit Test, Scrum agile work methodology, Jira, Trello. Visual Studio Code, Eclipse",
+    "puesto": "Senior Programmer - Programmer Analyst",
+    "clientes": " Post and Telegraph / Mapfree / TAO / CEPSA",
+    "imagen": {
+      "filename": "tsystems.png",
+      "url": "/images/recovered/fb0d7850ca50.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/fb0d7850ca50.svg",
+        "srcSet": "/images/recovered/fb0d7850ca50.svg"
+      },
+      "srcSet": "/images/recovered/fb0d7850ca50.svg"
+    }
+  },
+  {
+    "slug": "1",
+    "locale": "es",
+    "empresa": "T-SYSTEMS",
+    "fechaInicio": "2018-11-19",
+    "fechaFin": null,
+    "funcion": "**Daimler (Internacional)**\n\nMigración de un conjunto de aplicaciones web adoptando Angular y Microservicios java como nuevas tecnologías. Aplicaciones que utiliza el grupo Mercedes Benz dentro de su cadena de suministros y producción. Equipo de trabajo ágil trabajando conjuntamente con Alemania.  \nEntorno / herramientas / tecnología: Angular, Microservicios Java, Git, IntellJ, Scrum, Jira.\n\n\n**Proyecto CEPSA:**\n\nDesarrollo de una aplicación basada en React Native para informatizar las máquinas de auto lavado de Cepsa.\nEntorno / herramientas / tecnología: React Native, Metro Blunder, Styled Components, Hooks, Mqtt, AWS,Git\n\n**Proyecto TAO:**\n\nSmart Cities – Syrah. Smart Cities – Syrah. Desarrollo de aplicaciones web multiplataforma. Una aplicación mapa de ciudades, para que los diferentes ayuntamientos pudieran llevar un control de las ciudades analizando diferentes datos.\n\nEntorno / herramientas / tecnología: React, Next js, Styled Components Grid CSS para la parte FrontEnd. Elasticsearch como motor de analítica, análisis distribuido y APIs REST del lado de BackEnd.\n\n**Correos y Telégrafos:**\n\nDesarrollo de aplicaciones web (Portal de Contratación y Gestión de Epis) con diseño responsive para diferentes dispositivos. Mi labor dentro del equipo de desarrollo con metodología Scrum consistía en ir completando los diferentes tikets (tareas) que habíamos generado dentro del Jira. Tareas que podían ser tanto de la parte frontend como del backend.\n\nEntorno / herramientas / tecnología: React, Redux, Ant Design, Jest, Enzyme, Microservicios, Java, Spring Boot, Hibernate, JPA, Maven, JUnit Test, Metodología de trabajo agile Scrum, Jira, Trello. Visual Studio Code, Eclipse.\n\n**Mapfre:**\n\nDesarrollo de aplicaciones web para empresa de Seguros.\n\nEntorno / herramientas / tecnología: Software AG WebMethods, CAF, BPM, J2EE Spring Framework, MVC, JSF, JSTL y JPA.\n",
+    "id": "DatoCmsTrabajo-103267411-es",
+    "eht": "React, React Native, Next JS, Gatsby,  Hooks, Redux, Ant Design, Material UI, Styled Components ,Jest, Enzyme, Microservices, Java, Spring Boot, Hibernate, JPA, Maven, JUnit Test, Scrum agile work methodology, Jira, Trello. Visual Studio Code, Eclipse",
+    "puesto": "Senior Programmer - Programmer Analyst",
+    "clientes": "Correos y Telégrafos / Mapfree / TAO / CEPSA",
+    "imagen": {
+      "filename": "tsystems.png",
+      "url": "/images/recovered/fb0d7850ca50.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/fb0d7850ca50.svg",
+        "srcSet": "/images/recovered/fb0d7850ca50.svg"
+      },
+      "srcSet": "/images/recovered/fb0d7850ca50.svg"
+    }
+  },
+  {
+    "slug": "3",
+    "locale": "en",
+    "empresa": "TRAGSATEC",
+    "fechaInicio": "2013-01-09",
+    "fechaFin": "2018-11-16",
+    "funcion": "Development of a web application module for the Common Agricultural Policy (PAC 2015-2020). My work within the team of seven people consists of planning, design, maintenance and new application development. The web application manages European aid to Spain. It is a project that is divided into different modules, some are new developments, others evolutionary to both the front-end and back-end. All this development is under the Java-J2EE technology framework, against an Oracle database. At the same time, the application documentation is developed, using the Rational Software Architect tool, as well as the creation and generation of reports using the iReport Designer JasperSoft tool)",
+    "id": "DatoCmsTrabajo-103268193-en",
+    "eht": "Java-J2EE, Eclipse, Hibernate, JSP, Javascript, JQuery, DHTMLX, JPA, Maven, Spring, Struts 2, Tiles, Jasper Report, Enterprise Architect, Oracle, Glassfish, HTML, XML, SQL, Webservices, Maven, Subversion SVN, Junit, Enterprise Architect, UML, Toad for Oracle PL/SQL, XML, XSD validation. Redmine task manager.",
+    "puesto": "Senior programmer",
+    "clientes": "TRAGSATEC",
+    "imagen": {
+      "filename": "tragsa.jpg",
+      "url": "/images/recovered/42381a06fa5a.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/42381a06fa5a.svg",
+        "srcSet": "/images/recovered/42381a06fa5a.svg"
+      },
+      "srcSet": "/images/recovered/42381a06fa5a.svg"
+    }
+  },
+  {
+    "slug": "3",
+    "locale": "es",
+    "empresa": "TRAGSATEC",
+    "fechaInicio": "2013-01-09",
+    "fechaFin": "2018-11-16",
+    "funcion": "Desarrollo del módulo de una aplicación web para la Política Agrícola Común (PAC 2015-2020). Mi labor dentro del equipo de trabajo formado por siete personas consiste en la planificación, diseño, mantenimiento y nuevos desarrollos de aplicaciones. La aplicación web gestiona las ayudas europeas a España. Es un proyecto que se divide en diferentes módulos, unos son nuevos desarrollos, otros evolutivos tanto a la parte front-end como back-end. Todo este desarrollo es bajo el marco de la tecnología Java-J2EE, contra una base de datos Oracle. Al mismo tiempo se desarrolla la documentación de la aplicación, mediante la herramienta Rational Software Architect, también creación y generación de informes mediante la herramienta iReport Designer JasperSoft)",
+    "id": "DatoCmsTrabajo-103268193-es",
+    "eht": "Java-J2EE, Eclipse, Hibernate, JSP, Javascript, JQuery, DHTMLX, JPA, Maven, Spring, Struts 2, Tiles, Jasper Report, Enterprise Architect, Oracle, Glassfish, HTML, XML, SQL, Webservices, Maven, Subversion SVN, Junit, Enterprise Architect, UML, Toad for Oracle PL/SQL, XML, XSD validation. Gestor de tareas Redmine.",
+    "puesto": "Programador Sénior",
+    "clientes": "TRAGSATEC",
+    "imagen": {
+      "filename": "tragsa.jpg",
+      "url": "/images/recovered/42381a06fa5a.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/42381a06fa5a.svg",
+        "srcSet": "/images/recovered/42381a06fa5a.svg"
+      },
+      "srcSet": "/images/recovered/42381a06fa5a.svg"
+    }
+  },
+  {
+    "slug": "2",
+    "locale": "en",
+    "empresa": "MENSOFT",
+    "fechaInicio": "2011-02-01",
+    "fechaFin": "2001-01-01",
+    "funcion": "Development, maintenance, test control of the Family Protection web application (intranet of civil servants). This project was made up of a team of eight people and my profile was a Senior programmer where my work consisted of resolving incidents from the different Spanish administrations, these incidents involved changes in the web part as well as in the database part. or in reports. I also developed user manuals for the application. Generation of reports and different forms with the Actuate Birt tool. Development and maintenance of application manuals for the end customer. Analysis tasks.",
+    "id": "DatoCmsTrabajo-103268204-en",
+    "eht": "Prose architecture, workflow and batch prose, RSA (Rational Software Architect), Eclipse, Struts, Spring, Dimensions version control, Java, HTML, JS, XSL, XML, RSA, Altova XMLSpy, Birt-Actuate, Excel, Word. Spring. oracle database",
+    "puesto": "Senior programmer",
+    "clientes": "INSS",
+    "imagen": {
+      "filename": "mensoft.png",
+      "url": "/images/recovered/193d50f2e8b3.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/193d50f2e8b3.svg",
+        "srcSet": "/images/recovered/193d50f2e8b3.svg"
+      },
+      "srcSet": "/images/recovered/193d50f2e8b3.svg"
+    }
+  },
+  {
+    "slug": "2",
+    "locale": "es",
+    "empresa": "MENSOFT",
+    "fechaInicio": "2011-02-01",
+    "fechaFin": "2001-01-01",
+    "funcion": "Desarrollo, mantenimiento, control de pruebas de la aplicación web Protección Familiar (Intranet de los funcionarios). Este proyecto estaba constituido por un equipo de ocho personas y mi perfil era de programador Sénior donde mi labor consistía en la resolución de incidencias provenientes de las diferentes administraciones españolas,  estas incidencias implicaban cambios en la parte web como en la parte de la base de datos o en los informes. Además desarrollé manuales de usuario para la aplicación. Generación de informes y diferentes formularios con la herramienta Actuate Birt. Desarrollo y mantenimiento de manuales de la aplicación para el cliente final. Tareas de análisis",
+    "id": "DatoCmsTrabajo-103268204-es",
+    "eht": "Arquitectura Prosa, workflow y prosa batch, RSA (Rational Software Architect), Eclipse, Struts, Spring, control de versiones Dimensions, Java, HTML, JS, XSL, XML, RSA, Altova XMLSpy, Birt-Actuate, Excel, Word. Spring. Base de datos Oracle",
+    "puesto": "Programador Sénior",
+    "clientes": "INSS",
+    "imagen": {
+      "filename": "mensoft.png",
+      "url": "/images/recovered/193d50f2e8b3.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/193d50f2e8b3.svg",
+        "srcSet": "/images/recovered/193d50f2e8b3.svg"
+      },
+      "srcSet": "/images/recovered/193d50f2e8b3.svg"
+    }
+  },
+  {
+    "slug": "4",
+    "locale": "en",
+    "empresa": "ENTEL",
+    "fechaInicio": "2010-07-07",
+    "fechaFin": "2010-12-18",
+    "funcion": "Layout, modeling of web application for the BBVA client. Maintenance of the intranet for bank employees incorporating new improvements. I made a mockup using js, css, jquery and php to simulate the behavior of an application that we were developing. In addition, with the Nacar tool, we developed several screens that had different functionalities, these incorporate tables, lists, navigation buttons, among other elements.",
+    "id": "DatoCmsTrabajo-103268252-en",
+    "eht": "XML, XSL HTML, java script, and CSS style sheets, PHP Visual Nacar, RSA (Rational Software Architect), Eclipse, Oracle Database",
+    "puesto": "Junior programmer",
+    "clientes": "BBVA (Factories Area)",
+    "imagen": {
+      "filename": "entel.jpg",
+      "url": "/images/recovered/aaa61de00f8c.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/aaa61de00f8c.svg",
+        "srcSet": "/images/recovered/aaa61de00f8c.svg"
+      },
+      "srcSet": "/images/recovered/aaa61de00f8c.svg"
+    }
+  },
+  {
+    "slug": "4",
+    "locale": "es",
+    "empresa": "ENTEL",
+    "fechaInicio": "2010-07-07",
+    "fechaFin": "2010-12-18",
+    "funcion": "Maquetación, modelado de aplicación web para el cliente BBVA. Mantenimiento de la intranet de los empleados del banco incorporando nuevas mejoras. Realicé una maqueta usando js, css, jquery y php para simular el comportamiento de una aplicación que estábamos desarrollando. Además con la herramienta Nacar desarrollamos varias pantallas que tenían distintas funcionalidades, estas incorporan tablas, listas, botones navegación entre otros elementos.",
+    "id": "DatoCmsTrabajo-103268252-es",
+    "eht": "XML, XSL HTML, java script, y hojas de estilo CSS, PHP Visual Nacar, RSA (Rational Software Architect), Eclipse, Base de datos Oracle",
+    "puesto": "Programador Junior",
+    "clientes": "BBVA (Área de Factorías)",
+    "imagen": {
+      "filename": "entel.jpg",
+      "url": "/images/recovered/aaa61de00f8c.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/aaa61de00f8c.svg",
+        "srcSet": "/images/recovered/aaa61de00f8c.svg"
+      },
+      "srcSet": "/images/recovered/aaa61de00f8c.svg"
+    }
+  },
+  {
+    "slug": "5",
+    "locale": "en",
+    "empresa": "ARELANCE",
+    "fechaInicio": "2010-03-10",
+    "fechaFin": "2010-07-29",
+    "funcion": "Development and maintenance of Nacar Architecture. Development of different PL/SQL procedures for the application and performance of different tests with the BBDD.",
+    "id": "DatoCmsTrabajo-103268279-en",
+    "eht": "XML, XSL, PL/SQL, Java Eclipse, Visual Nacar, Toad for Oracle in an Oracle 9.i Database.",
+    "puesto": "Junior programmer",
+    "clientes": "BBVA (Architecture Area)",
+    "imagen": {
+      "filename": "arelance.jpg",
+      "url": "/images/recovered/06c3e51e35c8.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/06c3e51e35c8.svg",
+        "srcSet": "/images/recovered/06c3e51e35c8.svg"
+      },
+      "srcSet": "/images/recovered/06c3e51e35c8.svg"
+    }
+  },
+  {
+    "slug": "5",
+    "locale": "es",
+    "empresa": "ARELANCE",
+    "fechaInicio": "2010-03-10",
+    "fechaFin": "2010-07-29",
+    "funcion": "Desarrollo y mantenimiento de Arquitectura Nacar. Desarrollo de diferentes procedimientos PL/SQL para la aplicación y realización de diferentes pruebas con la BBDD.",
+    "id": "DatoCmsTrabajo-103268279-es",
+    "eht": "XML, XSL, PL/SQL, Java Eclipse, Visual Nacar, Toad for Oracle en una Base de datos Oracle 9.i.",
+    "puesto": "Programador Junior",
+    "clientes": "BBVA (Área de Arquitectura)",
+    "imagen": {
+      "filename": "arelance.jpg",
+      "url": "/images/recovered/06c3e51e35c8.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/06c3e51e35c8.svg",
+        "srcSet": "/images/recovered/06c3e51e35c8.svg"
+      },
+      "srcSet": "/images/recovered/06c3e51e35c8.svg"
+    }
+  },
+  {
+    "slug": "7",
+    "locale": "en",
+    "empresa": "Proyecta sistemas de  Información S.A ",
+    "fechaInicio": "2008-05-10",
+    "fechaFin": "2010-01-05",
+    "funcion": "Development, management and maintenance of different procedures for the database. Probate, document management, finance models.",
+    "id": "DatoCmsTrabajo-103268380-en",
+    "eht": "SQL Developer as a tool and CSV  for working versions. XSL adapters between the Flex part of Frontal and PL/SQL, Java, Eclipse services. Use of Linux, Unix and Shell to send instructions to the database server.",
+    "puesto": "DB programmer",
+    "clientes": "Inversis (Bank)",
+    "imagen": {
+      "filename": "proyecta.png",
+      "url": "/images/recovered/87124581f153.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/87124581f153.svg",
+        "srcSet": "/images/recovered/87124581f153.svg"
+      },
+      "srcSet": "/images/recovered/87124581f153.svg"
+    }
+  },
+  {
+    "slug": "7",
+    "locale": "es",
+    "empresa": "Proyecta sistemas de  Información S.A ",
+    "fechaInicio": "2008-05-10",
+    "fechaFin": "2010-01-05",
+    "funcion": "Desarrollo, gestión y mantenimiento de diferentes procedimientos para la base de datos. Testamentaria, gestión documental, modelos de hacienda. ",
+    "id": "DatoCmsTrabajo-103268380-es",
+    "eht": "SQL Developer como herramienta y CSV para versiones de trabajo. Adaptadores XSL entre la parte Flex de Frontal y servicios PL/SQL, Java, Eclipse. Uso de Linux, Unix y Shell para enviar instrucciones al servidor de base de datos.",
+    "puesto": "Programadora DB",
+    "clientes": "Inversis (Banco)",
+    "imagen": {
+      "filename": "proyecta.png",
+      "url": "/images/recovered/87124581f153.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/87124581f153.svg",
+        "srcSet": "/images/recovered/87124581f153.svg"
+      },
+      "srcSet": "/images/recovered/87124581f153.svg"
+    }
+  },
+  {
+    "slug": "6",
+    "locale": "en",
+    "empresa": "Sopra Profit Consulting",
+    "fechaInicio": "2008-03-01",
+    "fechaFin": "2008-05-10",
+    "funcion": "Development and maintenance of desktop web applications.",
+    "id": "DatoCmsTrabajo-103268515-en",
+    "eht": "Java, J2EE, Swing, Object Oriented programming.",
+    "puesto": "Junior programmer",
+    "clientes": "BBVA",
+    "imagen": {
+      "filename": "sopra.jpeg",
+      "url": "/images/recovered/981f219f163f.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/981f219f163f.svg",
+        "srcSet": "/images/recovered/981f219f163f.svg"
+      },
+      "srcSet": "/images/recovered/981f219f163f.svg"
+    }
+  },
+  {
+    "slug": "6",
+    "locale": "es",
+    "empresa": "Sopra Profit Consulting",
+    "fechaInicio": "2008-03-01",
+    "fechaFin": "2008-05-10",
+    "funcion": "Desarrollo y mantenimiento de aplicaciones web de escritorio.",
+    "id": "DatoCmsTrabajo-103268515-es",
+    "eht": "Java, J2EE, Swing, programación Orientada a Objetos",
+    "puesto": "Programadora junior",
+    "clientes": "BBVA",
+    "imagen": {
+      "filename": "sopra.jpeg",
+      "url": "/images/recovered/981f219f163f.svg",
+      "alt": null,
+      "fluid": {
+        "src": "/images/recovered/981f219f163f.svg",
+        "srcSet": "/images/recovered/981f219f163f.svg"
+      },
+      "srcSet": "/images/recovered/981f219f163f.svg"
+    }
+  }
+]

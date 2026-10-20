@@ -1,4 +1,5 @@
 import { graphql, Link } from 'gatsby'
+import trabajos from '../data/trabajos.json'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 import React from 'react'
@@ -69,7 +70,7 @@ const Trabajos = ({ data, pageContext, uri }) => {
         imagen,
         puesto,
         clientes
-    } = data.allDatoCmsTrabajo.nodes[0]
+    } = trabajos.find(item => item.slug === pageContext.slug && item.locale === language)
     const funcionOk = funcion.replaceAll('**', '\n')
 
     return (
@@ -106,32 +107,7 @@ const Trabajos = ({ data, pageContext, uri }) => {
 export default Trabajos
 
 export const query = graphql`
-    query ($language: String, $slug: String) {
-        allDatoCmsTrabajo(
-            filter: { locale: { eq: $language }, slug: { eq: $slug } }
-            sort: { fields: slug }
-        ) {
-            nodes {
-                clientes
-                slug
-                id
-                locale
-                empresa
-                puesto
-                eht
-                funcion
-                fechaInicio
-                fechaFin
-                imagen {
-                    filename
-                    url
-                    alt
-                    fluid {
-                        srcSet
-                    }
-                }
-            }
-        }
+    query ($language: String) {
         locales: allLocale(filter: { language: { eq: $language } }) {
             edges {
                 node {
