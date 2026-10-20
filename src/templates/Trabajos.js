@@ -80,7 +80,7 @@ const Trabajos = ({ data, pageContext, uri }) => {
                         fechaFin ? fechaFin : t('Actualidad')
                     }`}</h2>
                     <div>
-                        <img src={imagen.fluid.srcSet} alt={imagen.filename} />
+                        <img src={imagen.url} alt={imagen.filename} />
                         <h2>{t('Empresa')}:</h2>
                         <p>{empresa}</p>
                         <h2>{t('Clientes')}:</h2>
