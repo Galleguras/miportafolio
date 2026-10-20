@@ -5,7 +5,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar'
 import ListItemText from '@mui/material/ListItemText'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
 import Typography from '@mui/material/Typography'
-import { graphql, useStaticQuery } from 'gatsby'
+import cursos from '../../data/formacion.json'
 import React from 'react'
 import styled from 'styled-components'
 import { useLocationContext } from '../../context/LocationProvider'
@@ -28,32 +28,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 }))
 const CoursesList = () => {
     const { language } = useLocationContext()
-    const query = graphql`
-        {
-            formacion: allDatoCmsFormacion(
-                sort: { fields: fechaRealizacion, order: DESC }
-            ) {
-                nodes {
-                    descripcion
-                    fechaRealizacion(formatString: "DD-MM-YYYY")
-                    horas
-                    imagen {
-                        fluid {
-                            srcSet
-                            src
-                        }
-                        path
-                        filename
-                        url
-                    }
-                    locale
-                }
-            }
-        }
-    `
-    /*     console.clear()
-    console.log('query-->', query) */
-    const { formacion } = useStaticQuery(query)
+    const formacion = { nodes: cursos }
     const { t } = useTranslation()
     return (
         <>
@@ -68,7 +43,7 @@ const CoursesList = () => {
                 {formacion.nodes.map((curso) => {
                     if (curso.locale === language) {
                         return (
-                            <ListItem alignItems="center">
+                            <ListItem key={`${curso.locale}-${curso.descripcion}`} alignItems="center">
                                 <ListItemAvatar>
                                     <HtmlTooltip
                                         title={

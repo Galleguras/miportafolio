@@ -1,0 +1,706 @@
+[
+  {
+    "descripcion": "Angular course from zero to expert, Udemi platform: (Angular 11+) Fernando Herrera.",
+    "fechaRealizacion": "01-03-2023",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/a39f899adb17.svg",
+        "srcSet": "/images/recovered/a39f899adb17.svg"
+      },
+      "path": "/62546/1680185723-angular.png",
+      "filename": "angular.png",
+      "url": "/images/recovered/a39f899adb17.svg",
+      "srcSet": "/images/recovered/a39f899adb17.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Curso Angular de cero a experto, plataforma Udemi: (Angular 11+) Fernando Herrera.",
+    "fechaRealizacion": "01-03-2023",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/a39f899adb17.svg",
+        "srcSet": "/images/recovered/a39f899adb17.svg"
+      },
+      "path": "/62546/1680185723-angular.png",
+      "filename": "angular.png",
+      "url": "/images/recovered/a39f899adb17.svg",
+      "srcSet": "/images/recovered/a39f899adb17.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Git and GitHub Professional Course, Platzi platform",
+    "fechaRealizacion": "02-01-2023",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/f911e414cf6b.svg",
+        "srcSet": "/images/recovered/f911e414cf6b.svg"
+      },
+      "path": "/62546/1680185458-github-logo-300x300.png",
+      "filename": "github-logo-300x300.png",
+      "url": "/images/recovered/f911e414cf6b.svg",
+      "srcSet": "/images/recovered/f911e414cf6b.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Curso Profesional de Git y GitHub, plataforma Platzi",
+    "fechaRealizacion": "02-01-2023",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/f911e414cf6b.svg",
+        "srcSet": "/images/recovered/f911e414cf6b.svg"
+      },
+      "path": "/62546/1680185458-github-logo-300x300.png",
+      "filename": "github-logo-300x300.png",
+      "url": "/images/recovered/f911e414cf6b.svg",
+      "srcSet": "/images/recovered/f911e414cf6b.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "GraphQL with NodeJS (Queries with GraphQL Querys, Mutations, Typing).",
+    "fechaRealizacion": "01-08-2022",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/bab1120a609d.svg",
+        "srcSet": "/images/recovered/bab1120a609d.svg"
+      },
+      "path": "/62546/1661866961-gatsby.png",
+      "filename": "gatsby.png",
+      "url": "/images/recovered/bab1120a609d.svg",
+      "srcSet": "/images/recovered/bab1120a609d.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "GraphQL con NodeJS (Consultas con GraphQL Querys, Mutaciones, Tipado).",
+    "fechaRealizacion": "01-08-2022",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/bab1120a609d.svg",
+        "srcSet": "/images/recovered/bab1120a609d.svg"
+      },
+      "path": "/62546/1661866961-gatsby.png",
+      "filename": "gatsby.png",
+      "url": "/images/recovered/bab1120a609d.svg",
+      "srcSet": "/images/recovered/bab1120a609d.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Fundamental Course of Material UI with React, Introduction to React Native, Platzi platform.",
+    "fechaRealizacion": "08-06-2022",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/1cd07be18aed.svg",
+        "srcSet": "/images/recovered/1cd07be18aed.svg"
+      },
+      "path": "/62546/1680186113-react-n.png",
+      "filename": "react-n.png",
+      "url": "/images/recovered/1cd07be18aed.svg",
+      "srcSet": "/images/recovered/1cd07be18aed.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Curso Fundamental de Material UI con React, Introducción a React Native, plataforma Platzi.",
+    "fechaRealizacion": "08-06-2022",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/1cd07be18aed.svg",
+        "srcSet": "/images/recovered/1cd07be18aed.svg"
+      },
+      "path": "/62546/1680186113-react-n.png",
+      "filename": "react-n.png",
+      "url": "/images/recovered/1cd07be18aed.svg",
+      "srcSet": "/images/recovered/1cd07be18aed.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "React Jest Enzyme - (Basado en la metodologia TDD Testing de componentes de la aplicacion. Tests unitarios de integracion y E2E.)",
+    "fechaRealizacion": "11-01-2022",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/35e99f929e01.svg",
+        "srcSet": "/images/recovered/35e99f929e01.svg"
+      },
+      "path": "/62546/1661868551-jest.png",
+      "filename": "jest.png",
+      "url": "/images/recovered/35e99f929e01.svg",
+      "srcSet": "/images/recovered/35e99f929e01.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "React Jest Enzyme - (Basado en la metodologia TDD Testing de componentes de la aplicacion. Tests unitarios de integracion y E2E.) React Jest Enzyme - (Basado en la metodologia TDD Testing de componentes de la aplicacion. Tests unitarios de integracion y E2E.)",
+    "fechaRealizacion": "11-01-2022",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/35e99f929e01.svg",
+        "srcSet": "/images/recovered/35e99f929e01.svg"
+      },
+      "path": "/62546/1661868551-jest.png",
+      "filename": "jest.png",
+      "url": "/images/recovered/35e99f929e01.svg",
+      "srcSet": "/images/recovered/35e99f929e01.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Introduction to Gatsby Course: JAMstack (Modern web development architecture based on JavaScript on the client side, reusable APIs and the use of Markups). Gatsby Starters, Links, Gatsby Image, GraphQL.",
+    "fechaRealizacion": "01-09-2021",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/bab1120a609d.svg",
+        "srcSet": "/images/recovered/bab1120a609d.svg"
+      },
+      "path": "/62546/1661866961-gatsby.png",
+      "filename": "gatsby.png",
+      "url": "/images/recovered/bab1120a609d.svg",
+      "srcSet": "/images/recovered/bab1120a609d.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Curso de introduccion a Gatsby:  JAMstack (arquitectura moderna de desarrollo web basada en JavaScript en el lado del cliente, API reutilizables y uso de Markups). Gatsby Starters, Links, Gatsby Image,GraphQL.",
+    "fechaRealizacion": "01-09-2021",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/bab1120a609d.svg",
+        "srcSet": "/images/recovered/bab1120a609d.svg"
+      },
+      "path": "/62546/1661866961-gatsby.png",
+      "filename": "gatsby.png",
+      "url": "/images/recovered/bab1120a609d.svg",
+      "srcSet": "/images/recovered/bab1120a609d.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "React Pro - (MERN Full Stack: MongoDB, Express, React and Node. Next.js SSR Styled Components Firebase. Gatsby GraphQL DatoCMS. React Testing Library.)",
+    "fechaRealizacion": "01-04-2021",
+    "horas": 500,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/275976081ce1.svg",
+        "srcSet": "/images/recovered/275976081ce1.svg"
+      },
+      "path": "/62546/1661868349-react.png",
+      "filename": "react.png",
+      "url": "/images/recovered/275976081ce1.svg",
+      "srcSet": "/images/recovered/275976081ce1.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "React Pro - (MERN Full Stack: MongoDB, Express, React y Node. Next.js SSR Styled Components Firebase. Gatsby GraphQL DatoCMS. React Testing Library)",
+    "fechaRealizacion": "01-04-2021",
+    "horas": 500,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/275976081ce1.svg",
+        "srcSet": "/images/recovered/275976081ce1.svg"
+      },
+      "path": "/62546/1661868349-react.png",
+      "filename": "react.png",
+      "url": "/images/recovered/275976081ce1.svg",
+      "srcSet": "/images/recovered/275976081ce1.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Master React Native (Nicolas Schürmann)",
+    "fechaRealizacion": "08-01-2021",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/1cd07be18aed.svg",
+        "srcSet": "/images/recovered/1cd07be18aed.svg"
+      },
+      "path": "/62546/1643726876-usar-react-native-crear-app.png",
+      "filename": "usar-react-native-crear-app.png",
+      "url": "/images/recovered/1cd07be18aed.svg",
+      "srcSet": "/images/recovered/1cd07be18aed.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Master React Native (Nicolás Schürmann)",
+    "fechaRealizacion": "08-01-2021",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/1cd07be18aed.svg",
+        "srcSet": "/images/recovered/1cd07be18aed.svg"
+      },
+      "path": "/62546/1643726876-usar-react-native-crear-app.png",
+      "filename": "usar-react-native-crear-app.png",
+      "url": "/images/recovered/1cd07be18aed.svg",
+      "srcSet": "/images/recovered/1cd07be18aed.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Master React, Redux, Jest, Enzyme. React University. Microservices with Spring Boot and Spring Cloud Netflix Eureka.",
+    "fechaRealizacion": "06-05-2020",
+    "horas": 600,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/7fd8ed23391a.svg",
+        "srcSet": "/images/recovered/7fd8ed23391a.svg"
+      },
+      "path": "/62546/1643726954-react-redux.png",
+      "filename": "react-redux.png",
+      "url": "/images/recovered/7fd8ed23391a.svg",
+      "srcSet": "/images/recovered/7fd8ed23391a.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Master  React, Redux, Jest, Enzyme. Universidad React. Microservicios con Spring Boot y Spring Cloud Netflix Eureka.",
+    "fechaRealizacion": "06-05-2020",
+    "horas": 600,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/7fd8ed23391a.svg",
+        "srcSet": "/images/recovered/7fd8ed23391a.svg"
+      },
+      "path": "/62546/1643726954-react-redux.png",
+      "filename": "react-redux.png",
+      "url": "/images/recovered/7fd8ed23391a.svg",
+      "srcSet": "/images/recovered/7fd8ed23391a.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "React University - (Deep knowledge of React Core. All about React Hooks. Animations and transitions applied to components. Scalable development architectures. State management with Redux and React API Context. Create routing systems with React Router. Responsive and styled components Advanced style management with styled-components)",
+    "fechaRealizacion": "06-05-2020",
+    "horas": 600,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/e98c2462e0ab.svg",
+        "srcSet": "/images/recovered/e98c2462e0ab.svg"
+      },
+      "path": "/62546/1661868753-unireact.jpg",
+      "filename": "unireact.jpg",
+      "url": "/images/recovered/e98c2462e0ab.svg",
+      "srcSet": "/images/recovered/e98c2462e0ab.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Universidad React - (Conocimiento profundo de React Core. Todo sobre React Hooks. Animaciones y transiciones aplicadas a componentes. Arquitecturas de desarrollo escalable. Gestión del estado con Redux y React API Context. Crear sistemas de enrutado con React Router. Componentes Responsivos y con styled components. Gestión de estilos Avanzados con styled-components)",
+    "fechaRealizacion": "06-05-2020",
+    "horas": 600,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/e98c2462e0ab.svg",
+        "srcSet": "/images/recovered/e98c2462e0ab.svg"
+      },
+      "path": "/62546/1661868753-unireact.jpg",
+      "filename": "unireact.jpg",
+      "url": "/images/recovered/e98c2462e0ab.svg",
+      "srcSet": "/images/recovered/e98c2462e0ab.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "React js Basic - (Fundamentals / Creation and design of components. React Router / Component Lifecycle / Calls to an api.)",
+    "fechaRealizacion": "01-01-2020",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/275976081ce1.svg",
+        "srcSet": "/images/recovered/275976081ce1.svg"
+      },
+      "path": "/62546/1661868349-react.png",
+      "filename": "react.png",
+      "url": "/images/recovered/275976081ce1.svg",
+      "srcSet": "/images/recovered/275976081ce1.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "React js Basico - (Fundamento / Creacion y diseño de componentes. React Router / Component Lifecycle / LLamadas a una api.)",
+    "fechaRealizacion": "01-01-2020",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/275976081ce1.svg",
+        "srcSet": "/images/recovered/275976081ce1.svg"
+      },
+      "path": "/62546/1661868349-react.png",
+      "filename": "react.png",
+      "url": "/images/recovered/275976081ce1.svg",
+      "srcSet": "/images/recovered/275976081ce1.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "UiPath RPA developer advanced certificate",
+    "fechaRealizacion": "09-05-2019",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/72797d26e233.svg",
+        "srcSet": "/images/recovered/72797d26e233.svg"
+      },
+      "path": "/62546/1643727028-uipath-og-image.jpg",
+      "filename": "uipath-og-image.jpg",
+      "url": "/images/recovered/72797d26e233.svg",
+      "srcSet": "/images/recovered/72797d26e233.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Certificado avanzado de desarrollador UiPath RPA",
+    "fechaRealizacion": "09-05-2019",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/72797d26e233.svg",
+        "srcSet": "/images/recovered/72797d26e233.svg"
+      },
+      "path": "/62546/1643727028-uipath-og-image.jpg",
+      "filename": "uipath-og-image.jpg",
+      "url": "/images/recovered/72797d26e233.svg",
+      "srcSet": "/images/recovered/72797d26e233.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Master JasperSoft tool to develop and generate reports from JAVA",
+    "fechaRealizacion": "06-09-2017",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/b27401addddf.svg",
+        "srcSet": "/images/recovered/b27401addddf.svg"
+      },
+      "path": "/62546/1643731198-jaspersoft.jpg",
+      "filename": "jaspersoft.jpg",
+      "url": "/images/recovered/b27401addddf.svg",
+      "srcSet": "/images/recovered/b27401addddf.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Master JasperSoft herramienta para desarrollar y generar informes desde JAVA",
+    "fechaRealizacion": "06-09-2017",
+    "horas": 200,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/b27401addddf.svg",
+        "srcSet": "/images/recovered/b27401addddf.svg"
+      },
+      "path": "/62546/1643731198-jaspersoft.jpg",
+      "filename": "jaspersoft.jpg",
+      "url": "/images/recovered/b27401addddf.svg",
+      "srcSet": "/images/recovered/b27401addddf.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Master ETL Processes integrated with Java applications, Kettle Tool, Pentaho Business Analytics and Business Intelligence",
+    "fechaRealizacion": "19-11-2015",
+    "horas": 80,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/7139bc492fd7.svg",
+        "srcSet": "/images/recovered/7139bc492fd7.svg"
+      },
+      "path": "/62546/1643731252-etlprocess.jpg",
+      "filename": "etlprocess.jpg",
+      "url": "/images/recovered/7139bc492fd7.svg",
+      "srcSet": "/images/recovered/7139bc492fd7.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Master Procesos ETL integrados con aplicaciones Java, Herramienta Kettle, Pentaho Business Analytics and Business Intelligence",
+    "fechaRealizacion": "19-11-2015",
+    "horas": 80,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/7139bc492fd7.svg",
+        "srcSet": "/images/recovered/7139bc492fd7.svg"
+      },
+      "path": "/62546/1643731252-etlprocess.jpg",
+      "filename": "etlprocess.jpg",
+      "url": "/images/recovered/7139bc492fd7.svg",
+      "srcSet": "/images/recovered/7139bc492fd7.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "ISO27001 Training (DEVELOPER PERSONNEL)",
+    "fechaRealizacion": "10-09-2015",
+    "horas": 20,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/5edcc8917a74.svg",
+        "srcSet": "/images/recovered/5edcc8917a74.svg"
+      },
+      "path": "/62546/1643731603-iso270001.jpg",
+      "filename": "iso270001.jpg",
+      "url": "/images/recovered/5edcc8917a74.svg",
+      "srcSet": "/images/recovered/5edcc8917a74.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Formación ISO27001 (PERSONAL DESARROLLADOR)",
+    "fechaRealizacion": "10-09-2015",
+    "horas": 20,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/5edcc8917a74.svg",
+        "srcSet": "/images/recovered/5edcc8917a74.svg"
+      },
+      "path": "/62546/1643731603-iso270001.jpg",
+      "filename": "iso270001.jpg",
+      "url": "/images/recovered/5edcc8917a74.svg",
+      "srcSet": "/images/recovered/5edcc8917a74.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Master in Foreign Trade and Export (300 hours)",
+    "fechaRealizacion": "04-09-2013",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/3d7408c6f558.svg",
+        "srcSet": "/images/recovered/3d7408c6f558.svg"
+      },
+      "path": "/62546/1643731759-comercioex.jpg",
+      "filename": "comercioex.jpg",
+      "url": "/images/recovered/3d7408c6f558.svg",
+      "srcSet": "/images/recovered/3d7408c6f558.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Master en Comercio exterior y exportación (300 horas)",
+    "fechaRealizacion": "04-09-2013",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/3d7408c6f558.svg",
+        "srcSet": "/images/recovered/3d7408c6f558.svg"
+      },
+      "path": "/62546/1643731759-comercioex.jpg",
+      "filename": "comercioex.jpg",
+      "url": "/images/recovered/3d7408c6f558.svg",
+      "srcSet": "/images/recovered/3d7408c6f558.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Master in International Business Management",
+    "fechaRealizacion": "07-06-2013",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/ca1a5d8129e4.svg",
+        "srcSet": "/images/recovered/ca1a5d8129e4.svg"
+      },
+      "path": "/62546/1643731809-gestioncomercial.jpg",
+      "filename": "gestioncomercial.jpg",
+      "url": "/images/recovered/ca1a5d8129e4.svg",
+      "srcSet": "/images/recovered/ca1a5d8129e4.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Master en Gestión Comercial Internacional",
+    "fechaRealizacion": "07-06-2013",
+    "horas": 300,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/ca1a5d8129e4.svg",
+        "srcSet": "/images/recovered/ca1a5d8129e4.svg"
+      },
+      "path": "/62546/1643731809-gestioncomercial.jpg",
+      "filename": "gestioncomercial.jpg",
+      "url": "/images/recovered/ca1a5d8129e4.svg",
+      "srcSet": "/images/recovered/ca1a5d8129e4.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Development of web and mobile pages for different entities using Dreamweaver and programming languages PHP, HTML, AJAX, JQUERY, SQL, JS and CSS style sheets.",
+    "fechaRealizacion": "02-04-2013",
+    "horas": 1000,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/12a5d18ee896.svg",
+        "srcSet": "/images/recovered/12a5d18ee896.svg"
+      },
+      "path": "/62546/1643731682-php.jpg",
+      "filename": "php.jpg",
+      "url": "/images/recovered/12a5d18ee896.svg",
+      "srcSet": "/images/recovered/12a5d18ee896.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Desarrollo de páginas para web y móvil a diferentes entidades mediante Dreamweaver y lenguajes de programación PHP, HTML, AJAX, JQUERY, SQL, JS y hojas de estilo CSS",
+    "fechaRealizacion": "02-04-2013",
+    "horas": 1000,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/12a5d18ee896.svg",
+        "srcSet": "/images/recovered/12a5d18ee896.svg"
+      },
+      "path": "/62546/1643731682-php.jpg",
+      "filename": "php.jpg",
+      "url": "/images/recovered/12a5d18ee896.svg",
+      "srcSet": "/images/recovered/12a5d18ee896.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Introductory course to Prose and procedure manager",
+    "fechaRealizacion": "09-02-2012",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/2b0efc7ac3e0.svg",
+        "srcSet": "/images/recovered/2b0efc7ac3e0.svg"
+      },
+      "path": "/62546/1643731849-prosa.png",
+      "filename": "prosa.png",
+      "url": "/images/recovered/2b0efc7ac3e0.svg",
+      "srcSet": "/images/recovered/2b0efc7ac3e0.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Curso de iniciación a Prosa y gestor de procedimientos",
+    "fechaRealizacion": "09-02-2012",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/2b0efc7ac3e0.svg",
+        "srcSet": "/images/recovered/2b0efc7ac3e0.svg"
+      },
+      "path": "/62546/1643731849-prosa.png",
+      "filename": "prosa.png",
+      "url": "/images/recovered/2b0efc7ac3e0.svg",
+      "srcSet": "/images/recovered/2b0efc7ac3e0.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Birt-Actuate Reporting Tool Course",
+    "fechaRealizacion": "02-03-2011",
+    "horas": 50,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/1a5b5080e7f7.svg",
+        "srcSet": "/images/recovered/1a5b5080e7f7.svg"
+      },
+      "path": "/62546/1643732035-actuate.png",
+      "filename": "actuate.png",
+      "url": "/images/recovered/1a5b5080e7f7.svg",
+      "srcSet": "/images/recovered/1a5b5080e7f7.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Curso de Birt-Actuate herramienta de generación de informes",
+    "fechaRealizacion": "02-03-2011",
+    "horas": 50,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/1a5b5080e7f7.svg",
+        "srcSet": "/images/recovered/1a5b5080e7f7.svg"
+      },
+      "path": "/62546/1643732035-actuate.png",
+      "filename": "actuate.png",
+      "url": "/images/recovered/1a5b5080e7f7.svg",
+      "srcSet": "/images/recovered/1a5b5080e7f7.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Intensive master's degree in the GLOCAL Consulting computer consultancy of JAVA programming, JAVA SCRIPT, JSP with project development",
+    "fechaRealizacion": "15-05-2008",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/602095d45698.svg",
+        "srcSet": "/images/recovered/602095d45698.svg"
+      },
+      "path": "/62546/1643732258-logo_glocal_consulting.png",
+      "filename": "logo_glocal_consulting.png",
+      "url": "/images/recovered/602095d45698.svg",
+      "srcSet": "/images/recovered/602095d45698.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Máster intensivo en la consultora informática GLOCAL Consulting de programación JAVA, JAVA SCRIPT, JSP con desarrollo de proyecto ",
+    "fechaRealizacion": "15-05-2008",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/602095d45698.svg",
+        "srcSet": "/images/recovered/602095d45698.svg"
+      },
+      "path": "/62546/1643732258-logo_glocal_consulting.png",
+      "filename": "logo_glocal_consulting.png",
+      "url": "/images/recovered/602095d45698.svg",
+      "srcSet": "/images/recovered/602095d45698.svg"
+    },
+    "locale": "es"
+  },
+  {
+    "descripcion": "Intensive master's degree in the computer consultancy Entel of Visual Nacar and RSA (Rational Software Architect) for BBVA ",
+    "fechaRealizacion": "02-02-2008",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/97da5be440bb.svg",
+        "srcSet": "/images/recovered/97da5be440bb.svg"
+      },
+      "path": "/62546/1643732218-bbva.jpg",
+      "filename": "bbva.jpg",
+      "url": "/images/recovered/97da5be440bb.svg",
+      "srcSet": "/images/recovered/97da5be440bb.svg"
+    },
+    "locale": "en"
+  },
+  {
+    "descripcion": "Máster intensivo en la consultora informática Entel de Visual Nacar y RSA (Rational Software Architect) para BBVA ",
+    "fechaRealizacion": "02-02-2008",
+    "horas": 100,
+    "imagen": {
+      "fluid": {
+        "src": "/images/recovered/97da5be440bb.svg",
+        "srcSet": "/images/recovered/97da5be440bb.svg"
+      },
+      "path": "/62546/1643732218-bbva.jpg",
+      "filename": "bbva.jpg",
+      "url": "/images/recovered/97da5be440bb.svg",
+      "srcSet": "/images/recovered/97da5be440bb.svg"
+    },
+    "locale": "es"
+  }
+]
